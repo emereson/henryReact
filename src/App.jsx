@@ -6,7 +6,7 @@ import React, { Suspense, lazy, useEffect, useState } from 'react';
 import LoadingPage from './pages/LoadingPage';
 
 const Home = lazy(() => import('./pages/Home'));
-const Stories = lazy(() => import('./pages/stories'));
+const Stories = lazy(() => import('./pages/Stories'));
 const VideoInformation = lazy(() =>
   import('./pages/VideoInformation')
 );
