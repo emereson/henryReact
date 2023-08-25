@@ -1,0 +1,94 @@
+.film-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  opacity: 0.05;
+  background-image: url('/effectold.gif');
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 2vw;
+  height: 2vw;
+  margin: -1vw 0 0 -1.5vw;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  pointer-events: none; /* Evita que el cursor afecte a los elementos bajo él */
+}
+
+/* clicktop__container */
+.clicktop__container {
+  position: relative;
+  width: 100%;
+  height: 13vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4svw 2vw 4vw;
+  z-index: 5;
+  align-items: center;
+}
+
+.clicktop__nav {
+  display: flex;
+  gap: 3vw;
+}
+
+.clicktop__nav a {
+  color: var(--text-color-white);
+  font-size: 1.3vw;
+  letter-spacing: 0.2vw;
+  z-index: 10;
+  cursor: pointer;
+}
+.clicktop__nav i {
+  font-size: 1.9vw;
+  margin-left: -1vw;
+}
+
+.clicktop__navTwo {
+  margin-left: -4vw;
+}
+.arrow__top {
+  z-index: 5;
+  bottom: 8%;
+  right: 3%;
+  color: var(--text-color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5vw;
+  font-weight: 100;
+  cursor: pointer;
+  animation: clicktop 2s infinite;
+}
+
+@keyframes clicktop {
+  from {
+    transform: translateY(20%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 660px) {
+  .custom-cursor {
+    display: none;
+  }
+  .clicktop__container {
+    height: 8vh;
+  }
+  .clicktop__nav a {
+    font-size: 3.5vw;
+  }
+  .clicktop__nav i {
+    display: none;
+  }
+  .arrow__top {
+    font-size: 7vw;
+  }
+}

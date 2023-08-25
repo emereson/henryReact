@@ -1,0 +1,139 @@
+.home__container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  overflow: hidden;
+}
+
+.home__titles {
+  position: absolute;
+  color: var(--body-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-left: 3.5vw;
+  z-index: 5;
+}
+
+.home__titles span {
+  width: 9vw;
+  height: 0.16vw;
+  background-color: var(--body-white);
+}
+.title__main,
+.title__sub {
+  font-size: 13vw;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  gap: 1vw;
+}
+.title__main.enter {
+  animation: slideIn 1s forwards, fadeIn 1s forwards;
+}
+
+.title__sub.enter {
+  animation: slideIn 2s forwards, fadeIn 2s forwards;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Videos */
+
+.home__videos {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.video__container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.video__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home__ul {
+  position: absolute;
+  z-index: 5;
+  bottom: 2.5vw;
+  right: 4vw;
+  display: flex;
+  gap: 3vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+    sans-serif;
+  font-size: 1.2vw;
+  font-weight: 300;
+}
+.home__ul a {
+  color: var(--body-white);
+}
+
+.translation__container {
+  position: absolute;
+  z-index: 8;
+  bottom: 2.5vw;
+  left: 2.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--body-white);
+  font-size: 1.7vw;
+}
+
+.translation__container button {
+  color: var(--body-white);
+  background-color: transparent;
+  font-size: 1.5vw;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  width: 5vw;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.translation__container button:hover {
+  color: var(--text-color-white);
+  background-color: #5c5443;
+}
+@media (max-width: 660px) {
+  .home__ul {
+    font-size: 3.5vw;
+    padding-bottom: 3vw;
+  }
+  .translation__container button {
+    width: 15vw;
+    font-size: 4vw;
+    margin-bottom: 3vw;
+  }
+}

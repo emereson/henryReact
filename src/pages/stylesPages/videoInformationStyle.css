@@ -1,0 +1,319 @@
+.video-information-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.videoInformation__loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--body-black);
+  z-index: 10;
+  opacity: 1;
+}
+.videoInformation__loading-exit {
+  opacity: 0;
+  z-index: -10;
+}
+
+.videoInformation__loading-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  transform: translateY(100%);
+}
+.videoInformation__loadingImg-exit {
+  animation: loadingImg 2.5s forwards;
+}
+
+@keyframes loadingImg {
+  0% {
+    opacity: 0;
+    filter: grayscale(1);
+  }
+  30% {
+    transform: translateY(0);
+    opacity: 1;
+    filter: grayscale(1);
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+    filter: grayscale(1);
+  }
+  70% {
+    transform: translateY(0);
+    opacity: 1;
+    filter: grayscale(1);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.9;
+    filter: grayscale(0);
+  }
+}
+.videoInformation-video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.videoInformation-video h2 {
+  position: absolute;
+  color: var(--text-color-white);
+  font-size: 4.5vw;
+  font-weight: 400;
+  letter-spacing: 0.8vw;
+  transition: all 2s;
+  cursor: none;
+}
+.videoInformation-video h4 {
+  position: absolute;
+  margin-top: 9vw;
+  color: var(--text-color-white);
+  font-size: 2vw;
+  font-weight: 400;
+  letter-spacing: 0.8vw;
+  transition: all 2s;
+  cursor: none;
+}
+
+.videoInformation-video img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  object-fit: cover;
+  transition: all 2s;
+}
+.videoInformation-video span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+  background-image: url('/effectold.gif');
+  transition: all 1s;
+}
+.videoInformation-video video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.video-information-controls {
+  position: absolute;
+  bottom: 3%;
+  z-index: 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 0.5vw 0 0.5vw;
+  gap: 1.8vw;
+}
+
+.video-information-time {
+  width: 7%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6vw;
+  font-weight: 100;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  overflow: hidden;
+}
+.video-current-time {
+  color: var(--body-white);
+  font-size: 1.2vw;
+}
+.video-duration-time {
+  color: var(--body-gray);
+  font-size: 1.2vw;
+}
+
+.video-information-progress {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1vw;
+  padding: 0 1vw 0 1vw;
+}
+
+.custom-progress {
+  appearance: none;
+  outline: none;
+  width: 100%;
+  height: 0.5vw;
+  border-radius: 1vw;
+  background-repeat: no-repeat;
+  background-color: rgba(53, 53, 53, 0.765);
+  overflow: hidden;
+}
+
+.custom-progress::-webkit-slider-thumb {
+  appearance: none;
+  width: 0.3vw;
+  height: 1.5vw;
+  background-color: aliceblue;
+  box-shadow: -100vw 0vw 0 100vw rgb(124, 124, 124);
+  cursor: pointer;
+}
+
+.video-information-volume {
+  position: relative;
+  display: flex;
+  gap: 2vw;
+  color: aliceblue;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.5vw;
+}
+.volumenProgress__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.volumen__progress {
+  position: absolute;
+  top: -3.5vw;
+  appearance: none;
+  outline: none;
+  width: 100%;
+  height: 0.6vw;
+  border-radius: 1vw;
+  background-repeat: no-repeat;
+  background-color: rgba(53, 53, 53, 0.765);
+  overflow: hidden;
+  transform: rotateZ(-90deg);
+}
+
+.volumen__progress::-webkit-slider-thumb {
+  appearance: none;
+  width: 0.2vw;
+  height: 1.5vw;
+  background-color: aliceblue;
+  box-shadow: -100vw 0vw 0 100vw rgb(124, 124, 124);
+  cursor: pointer;
+}
+.bxs-volume-full {
+  font-size: 2vw;
+  padding-top: 4vw;
+  margin-top: -4vw;
+}
+.bx-fullscreen {
+  color: var(--body-white);
+  font-size: 2.3vw;
+  font-weight: 100;
+  padding-left: 0.6vw;
+  cursor: pointer;
+}
+
+/* cardVideoInformation */
+.cardVideoInformation-container {
+  width: 80%;
+  min-height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 0 10% 0;
+  gap: 8vw;
+}
+.cardVideoInformation-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+.cardVideoInformation-section h4 {
+  font-size: 1.6vw;
+  font-weight: 400;
+  letter-spacing: 0.2vw;
+  color: var(--text-color-gold);
+}
+
+.cardVideoInformation-section a,
+.cardVideoInformation-section p {
+  font-size: 1.6vw;
+  font-weight: 400;
+  letter-spacing: 0.2vw;
+  color: var(--text-color-white);
+}
+
+@media (max-width: 750px) {
+  .videoInformation-video {
+    height: 50vh;
+  }
+  .videoInformation-video h2 {
+    font-size: 7vw;
+  }
+  .videoInformation-video h4 {
+    margin-top: 14vw;
+    font-size: 4vw;
+  }
+  .video-information-time {
+    width: 20%;
+  }
+  .video-current-time {
+    font-size: 3.5vw;
+  }
+  .video-duration-time {
+    font-size: 3.5vw;
+  }
+  .video-information-progress {
+    width: 50%;
+  }
+  .custom-progress {
+    height: 3vw;
+  }
+  .bxs-volume-full {
+    font-size: 6vw;
+  }
+  .volumen__progress {
+    top: -11vw;
+    height: 2vw;
+  }
+  .bx-fullscreen {
+    font-size: 6vw;
+  }
+  .cardVideoInformation-section {
+    gap: 1vw;
+  }
+  .cardVideoInformation-section h4 {
+    font-size: 3.5vw;
+  }
+
+  .cardVideoInformation-section a,
+  .cardVideoInformation-section p {
+    font-size: 3.5vw;
+  }
+  .nextPrevVideo__prev,
+  .nextPrevVideo__next {
+    font-size: 4.5vw !important;
+  }
+}

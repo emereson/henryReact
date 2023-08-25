@@ -1,0 +1,32 @@
+.nextPrevVideo__prev,
+.nextPrevVideo__next {
+  position: absolute;
+  left: 1vw;
+  top: 45%;
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0.2em;
+  color: var(--text-color-white);
+  font-size: 2vw;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nextPrevVideo__next {
+  position: absolute;
+  left: auto;
+  right: 1vw;
+}
+.nextPrevVideo__prev:hover {
+  background-color: var(--text-color-gold);
+  transition: 0.5s;
+}
+
+.nextPrevVideo__next:hover {
+  background-color: var(--text-color-gold);
+  transition: 0.5s;
+}
