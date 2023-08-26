@@ -34,7 +34,7 @@
 
 .loadingPage__title {
   width: 30vw;
-  color: var(--text-color-beigh);
+  color: var(--body-white);
   font-size: 3vw;
   font-weight: 400;
   letter-spacing: 1.5vw;
@@ -44,7 +44,7 @@
 .loadingPage__div {
   position: relative;
   width: 30vw;
-  height: 0.2vw;
+  height: 0.15vw;
   border-radius: 0.3vw;
   background-color: rgb(66, 65, 62);
   z-index: 4;
@@ -55,7 +55,7 @@
   position: absolute;
   width: 0;
   height: 100%;
-  background-color: var(--text-color-beigh);
+  background-color: var(--text-color-gold);
   animation: loading 3s forwards;
 }
 
