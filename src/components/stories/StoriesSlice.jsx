@@ -1,6 +1,11 @@
 import React from 'react';
 
-const StoriesSlice = ({ storieSlice, storiesTextSlices, index, translation }) => {
+const StoriesSlice = ({
+  storieSlice,
+  storiesTextSlices,
+  index,
+  translation,
+}) => {
   return (
     <ul
       className="storieSlice__ul"
@@ -14,11 +19,15 @@ const StoriesSlice = ({ storieSlice, storiesTextSlices, index, translation }) =>
     >
       <li className="storieSlice__title">
         <p>{storieSlice.numberTitle}. </p>
-        {translation === 'spanish' ? storieSlice.title : storieSlice.titleEng}
+        {translation === 'spanish'
+          ? storieSlice.title
+          : storieSlice.titleEng}
       </li>
 
       <li className="storieSlice__description">
-        {translation === 'spanish' ? storieSlice.description : storieSlice.descriptionEng}
+        {translation === 'spanish'
+          ? storieSlice.description
+          : storieSlice.descriptionEng}
       </li>
     </ul>
   );

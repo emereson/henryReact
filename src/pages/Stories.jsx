@@ -7,7 +7,6 @@ import VideosStories from '../components/stories/VideosStories';
 import PhotographsStories from '../components/stories/PhotographsStories';
 import { useSelector } from 'react-redux';
 import ClickTop from '../components/ClickTop';
-import LoadingPage from './LoadingPage';
 
 const Stories = () => {
   const [storiesSlices, setStoriesSlices] = useState();
@@ -51,7 +50,7 @@ const Stories = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setStoriesTextSlices((prevValue) =>
-        prevValue >= storiesSlices?.results - 2 ? 0 : prevValue + 1
+        prevValue >= storiesSlices?.results - 1 ? 0 : prevValue + 1
       );
     }, 2500);
     return () => clearInterval(interval);

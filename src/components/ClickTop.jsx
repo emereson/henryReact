@@ -67,7 +67,10 @@ const ClickTop = () => {
           YOUTUBE
         </a>
       </nav>
-      <i class="bx bx-up-arrow-alt arrow__top" onClick={clickTop}></i>
+      <i
+        className="bx bx-up-arrow-alt arrow__top"
+        onClick={clickTop}
+      ></i>
     </section>
   );
 };
