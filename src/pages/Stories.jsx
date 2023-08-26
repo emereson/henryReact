@@ -52,7 +52,7 @@ const Stories = () => {
       setStoriesTextSlices((prevValue) =>
         prevValue >= storiesSlices?.results - 1 ? 0 : prevValue + 1
       );
-    }, 2500);
+    }, 5000);
     return () => clearInterval(interval);
   }, [storiesSlices]);
 
