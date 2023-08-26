@@ -26,7 +26,12 @@ const Header = () => {
         closeNav ? 'header__container--active' : ''
       }`}
     >
-      <Link className="header__logo" to="/" title="Henry Gil - Home">
+      <Link
+        className="header__logo"
+        to="/"
+        title="Henry Gil - Home"
+        onClick={handleLinkClick}
+      >
         HENRY GIL
       </Link>
       <nav className="header__nav">
