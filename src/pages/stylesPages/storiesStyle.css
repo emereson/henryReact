@@ -88,7 +88,7 @@
   position: absolute;
   bottom: 8vw;
   display: flex;
-  gap: 2vw;
+  gap: 0.5vw;
   z-index: 5;
 }
 
