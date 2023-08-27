@@ -10,6 +10,7 @@
     rgb(42, 32, 26),
     rgb(19, 17, 14)
   );
+  overflow: hidden;
 }
 
 .films__section {
