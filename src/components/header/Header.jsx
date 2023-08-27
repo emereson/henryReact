@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './headerStyle.css';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { setTranslation } from '../../store/slices/translation';
 
 const Header = () => {
   const [closeNav, setCloseNav] = useState(false);
   const [viewIcon, setViewIcon] = useState(0);
   const translation = useSelector((state) => state.translation);
+  const dispatch = useDispatch();
 
   const handleLinkClick = () => {
     setCloseNav(false);
@@ -132,9 +134,31 @@ const Header = () => {
             onMouseOut={handleMouseOut}
             onClick={handleLinkClick}
           />
-          <li className="header__menu-correo">
+          <div className="header__menu-correo">
+            <div className="translation__container header__menu-buttons">
+              <button
+                onClick={() => dispatch(setTranslation('english'))}
+                style={
+                  translation === 'english'
+                    ? { color: '#e0dcd0', background: '#5c5443' }
+                    : {}
+                }
+              >
+                ENG
+              </button>
+              <button
+                onClick={() => dispatch(setTranslation('spanish'))}
+                style={
+                  translation === 'spanish'
+                    ? { color: '#e0dcd0', background: '#5c5443' }
+                    : {}
+                }
+              >
+                ESP
+              </button>
+            </div>
             henrygilweddings.com
-          </li>
+          </div>
         </ul>
       </nav>
       <Link

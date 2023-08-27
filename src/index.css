@@ -14,7 +14,7 @@
 }
 
 *::-webkit-scrollbar {
-  width: 0.8vw;
+  width: 0.6vw;
 }
 
 *::-webkit-scrollbar-track {
@@ -23,11 +23,11 @@
 
 *::-webkit-scrollbar-thumb {
   background-color: var(--text-color-gold);
-  border-radius: 15px;
+  border-radius: 10vw;
 }
 
-html {
-  scroll-behavior: smooth;
+*::-webkit-scrollbar-thumb:vertical {
+  height: 1vw;
 }
 
 @font-face {

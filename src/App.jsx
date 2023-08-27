@@ -60,6 +60,7 @@ function App() {
     <>
       <ScrollToTop />
       <Header />
+
       <div className="film-effect"></div>
 
       {!viewloading ? (
