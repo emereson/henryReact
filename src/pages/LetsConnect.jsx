@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './stylesPages/letsConnect.css';
 import emailjs from '@emailjs/browser';
 import ClickTop from '../components/ClickTop';
@@ -7,6 +7,63 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const LetsConnect = ({ translation }) => {
   const formRef = useRef();
+
+  const [viewSection, setviewSection] = useState(false);
+  const [viewSection2, setviewSection2] = useState(false);
+  const [label, setLabel] = useState('');
+  const [label2, setLabel2] = useState('');
+  const [label3, setLabel3] = useState('');
+  const [label4, setLabel4] = useState('');
+  const [label5, setLabel5] = useState('');
+  const [label6, setLabel6] = useState('');
+  const [label7, setLabel7] = useState('');
+  const [label8, setLabel8] = useState('');
+
+  const [loading, setloading] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const section = document.querySelector(
+        '.letsConnect__sectionTwo'
+      );
+      const section2 = document.querySelector('.letsConnec__form');
+
+      if (section) {
+        if (isInViewport(section)) {
+          setviewSection(true);
+        } else {
+          setviewSection(false);
+        }
+      }
+
+      if (section2) {
+        if (isInViewport(section2)) {
+          setviewSection2(true);
+        } else {
+          setviewSection2(false);
+        }
+      }
+    };
+
+    const isInViewport = (element) => {
+      const rect = element.getBoundingClientRect();
+      const windowHeight =
+        window.innerHeight || document.documentElement.clientHeight;
+      const topOffset = 50;
+
+      return rect.top + topOffset < windowHeight;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  setTimeout(() => {
+    setloading(true);
+  }, 2000);
 
   const sendEmail = (e) => {
     e.preventDefault(); // Prevent form submission
@@ -37,156 +94,333 @@ const LetsConnect = ({ translation }) => {
       });
   };
 
+  const handleInputChange = (event) => {
+    const inputValue = event.target.value;
+
+    if (inputValue.length === 0) {
+      setLabel('');
+    } else {
+      setLabel(event.target.id);
+    }
+  };
+  const handleInputChange2 = (event) => {
+    const inputValue = event.target.value;
+
+    if (inputValue.length === 0) {
+      setLabel2('');
+    } else {
+      setLabel2(event.target.id);
+    }
+  };
+  const handleInputChange3 = (event) => {
+    const inputValue = event.target.value;
+
+    if (inputValue.length === 0) {
+      setLabel3('');
+    } else {
+      setLabel3(event.target.id);
+    }
+  };
+  const handleInputChange4 = (event) => {
+    const inputValue = event.target.value;
+
+    if (inputValue.length === 0) {
+      setLabel4('');
+    } else {
+      setLabel4(event.target.id);
+    }
+  };
+  const handleInputChange5 = (event) => {
+    const inputValue = event.target.value;
+
+    if (inputValue.length === 0) {
+      setLabel5('');
+    } else {
+      setLabel5(event.target.id);
+    }
+  };
+  const handleInputChange6 = (event) => {
+    const inputValue = event.target.value;
+
+    if (inputValue.length === 0) {
+      setLabel6('');
+    } else {
+      setLabel6(event.target.id);
+    }
+  };
+  const handleInputChange7 = (event) => {
+    const inputValue = event.target.value;
+
+    if (inputValue.length === 0) {
+      setLabel7('');
+    } else {
+      setLabel7(event.target.id);
+    }
+  };
+  const handleInputChange8 = (event) => {
+    const inputValue = event.target.value;
+
+    if (inputValue.length === 0) {
+      setLabel8('');
+    } else {
+      setLabel8(event.target.id);
+    }
+  };
+
   return (
-    <div className="letsConnect__container">
-      <ToastContainer />
-      <section className="letsConnect__section">
-        <img src="./grupo1.jpg" alt="" />
-        <h1>
-          {translation === 'spanish' ? `HABLEMOS` : `LET'S TALK`}
-        </h1>
-      </section>
-      <section className="letsConnect__sectionTwo">
-        <p>
-          {translation === 'spanish'
-            ? `Gracias por estar interesadp en mi.`
-            : `Thank you for being interested in me.`}
-        </p>
-        <p>
-          {translation === 'spanish'
-            ? `sera un honor capturar tus mejores momentos.`
-            : `it will be an honor to capture your best moments.`}
-        </p>
-        <p>
-          {translation === 'spanish'
-            ? `si quieres obtener todos lo detalles. rellena el formulario`
-            : `
+    <>
+      {!loading ? (
+        <div className="loading">
+          <img
+            className="loading__img "
+            src="./grupo1.jpg"
+            alt="Let's connect"
+          />
+        </div>
+      ) : (
+        <div className="letsConnect__container">
+          <ToastContainer />
+          <section className="letsConnect__section">
+            <img src="./grupo1.jpg" alt="Let's connect" />
+            <h1>
+              {translation === 'spanish' ? `HABLEMOS` : `LET'S TALK`}
+            </h1>
+          </section>
+          <section
+            className={`letsConnect__sectionTwo ${
+              viewSection ? 'viewAnimation' : ''
+            }`}
+          >
+            <p>
+              {translation === 'spanish'
+                ? `Gracias por estar interesadp en mi.`
+                : `Thank you for being interested in me.`}
+            </p>
+            <p>
+              {translation === 'spanish'
+                ? `sera un honor capturar tus mejores momentos.`
+                : `it will be an honor to capture your best moments.`}
+            </p>
+            <p>
+              {translation === 'spanish'
+                ? `si quieres obtener todos lo detalles. rellena el formulario`
+                : `
             if you want to get all the details. complete the form`}
-        </p>
-        <p>
-          {translation === 'spanish'
-            ? `y me pondre en contacto contigo`
-            : `and I will contact you.`}
-        </p>
-      </section>
-      <form
-        className="letsConnec__form"
-        ref={formRef}
-        onSubmit={sendEmail}
-      >
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder={
-            translation === 'spanish'
-              ? 'Nombre (Tuyo + el de tu pareja)*'
-              : 'Name (Yours + your partner)*'
-          }
-          required
-        />
+            </p>
+            <p>
+              {translation === 'spanish'
+                ? `y me pondre en contacto contigo`
+                : `and I will contact you.`}
+            </p>
+          </section>
+          <form
+            className={`letsConnec__form ${
+              viewSection2 ? 'viewAnimation' : ''
+            }`}
+            ref={formRef}
+            onSubmit={sendEmail}
+          >
+            <div>
+              <label
+                htmlFor="name"
+                style={
+                  label === 'name'
+                    ? { transform: 'translateY(10%)' }
+                    : { transform: 'translateY(170%)' }
+                }
+              >
+                {translation === 'spanish'
+                  ? 'Nombre (Tuyo + el de tu pareja)*'
+                  : 'Name (Yours + your partner)*'}
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                onChange={handleInputChange}
+              />
+            </div>
 
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder={
-            translation === 'spanish' ? 'Email*' : 'Email*'
-          }
-          required
-        />
+            <div>
+              <label
+                htmlFor="email"
+                style={
+                  label2 === 'email'
+                    ? { transform: 'translateY(10%)' }
+                    : { transform: 'translateY(170%)' }
+                }
+              >
+                {translation === 'spanish' ? 'Email*' : 'Email*'}
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                onChange={handleInputChange2}
+              />
+            </div>
 
-        <input
-          type="tel"
-          name="phone"
-          id="phone"
-          placeholder={
-            translation === 'spanish'
-              ? 'Número de teléfono y mejor hora para contactarlo'
-              : 'Phone Number & Best Time yo Reach You'
-          }
-          required
-        />
+            <div>
+              <label
+                htmlFor="phone"
+                style={
+                  label3 === 'phone'
+                    ? { transform: 'translateY(10%)' }
+                    : { transform: 'translateY(170%)' }
+                }
+              >
+                {translation === 'spanish'
+                  ? 'Número de teléfono y mejor hora para contactarlo'
+                  : 'Phone Number & Best Time yo Reach You'}
+              </label>
 
-        <input
-          type="text"
-          name="redes"
-          id="redes"
-          placeholder={
-            translation === 'spanish'
-              ? 'Redes Sociales:IG, FB, Tiktok'
-              : 'Social Networks: IG, FB, Tiktok'
-          }
-          required
-        />
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                onChange={handleInputChange3}
+                required
+              />
+            </div>
 
-        <input
-          type="text"
-          name="interested"
-          id="interested"
-          placeholder={
-            translation === 'spanish'
-              ? '¿En que estas interesado?'
-              : `What are you interested in?
-          `
-          }
-          required
-        />
-        <input
-          type="text"
-          name="location"
-          id="location"
-          placeholder={
-            translation === 'spanish'
-              ? 'Lugar del evento'
-              : 'Place of the event'
-          }
-          required
-        />
-        <input
-          type="text"
-          name="date"
-          id="date"
-          placeholder={
-            translation === 'spanish'
-              ? 'Fecha del evento'
-              : 'Event date'
-          }
-          required
-        />
-        <input
-          type="text"
-          name="know"
-          id="know"
-          placeholder={
-            translation === 'spanish'
-              ? 'Como me has conocido'
-              : 'How did you know me'
-          }
-          required
-        />
-        <textarea
-          name="message"
-          id="mensaje"
-          rows="10"
-          cols="50"
-          placeholder={
-            translation === 'spanish'
-              ? 'Cuéntame un poco más sobre ustedes como pareja y cuál es su visión para su boda, me encantaría que me lo contaran. (Si la fecha de la boda no está decidida, da una idea de lo que estabas pensando aquí)'
-              : 'Tell me a bit more about you as a couple and what is your vision for your wedding, I would love to hear from you. (If the wedding date is not decided, give an idea of ​​what you were thinking here)'
-          }
-          required
-        />
-        <button
-          className="letsConnect__submit"
-          type="submit"
-          value="Enviar"
-        >
-          Enviar
-        </button>
-      </form>
-      <ClickTop />
-    </div>
+            <div>
+              <label
+                htmlFor="redes"
+                style={
+                  label4 === 'redes'
+                    ? { transform: 'translateY(10%)' }
+                    : { transform: 'translateY(170%)' }
+                }
+              >
+                {translation === 'spanish'
+                  ? 'Redes Sociales:IG, FB, Tiktok'
+                  : 'Social Networks: IG, FB, Tiktok'}
+              </label>
+
+              <input
+                type="text"
+                name="redes"
+                id="redes"
+                onChange={handleInputChange4}
+                required
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="interested"
+                style={
+                  label5 === 'interested'
+                    ? { transform: 'translateY(10%)' }
+                    : { transform: 'translateY(170%)' }
+                }
+              >
+                {translation === 'spanish'
+                  ? '¿En que estas interesado?'
+                  : `What are you interested in?
+          `}
+              </label>
+
+              <input
+                type="text"
+                name="interested"
+                id="interested"
+                onChange={handleInputChange5}
+                required
+              />
+            </div>
+
+            <div>
+              <label
+                htmlFor="location"
+                style={
+                  label6 === 'location'
+                    ? { transform: 'translateY(10%)' }
+                    : { transform: 'translateY(170%)' }
+                }
+              >
+                {translation === 'spanish'
+                  ? 'Lugar del evento'
+                  : 'Place of the event'}
+              </label>
+
+              <input
+                type="text"
+                name="location"
+                id="location"
+                onChange={handleInputChange6}
+                required
+              />
+            </div>
+
+            <div>
+              <label
+                htmlFor="date"
+                style={
+                  label7 === 'date'
+                    ? { transform: 'translateY(10%)' }
+                    : { transform: 'translateY(170%)' }
+                }
+              >
+                {translation === 'spanish'
+                  ? 'Fecha del evento'
+                  : 'Event date'}
+              </label>
+              <input
+                type="text"
+                name="date"
+                id="date"
+                onChange={handleInputChange7}
+                required
+              />
+            </div>
+
+            <div>
+              <label
+                htmlFor="know"
+                style={
+                  label8 === 'know'
+                    ? { transform: 'translateY(10%)' }
+                    : { transform: 'translateY(170%)' }
+                }
+              >
+                {translation === 'spanish'
+                  ? 'Como me has conocido'
+                  : 'How did you know me'}
+              </label>
+              <input
+                type="text"
+                name="know"
+                id="know"
+                onChange={handleInputChange8}
+                required
+              />
+            </div>
+            <textarea
+              name="message"
+              id="mensaje"
+              rows="10"
+              cols="50"
+              placeholder={
+                translation === 'spanish'
+                  ? 'Cuéntame un poco más sobre ustedes como pareja y cuál es su visión para su boda, me encantaría que me lo contaran. (Si la fecha de la boda no está decidida, da una idea de lo que estabas pensando aquí)'
+                  : 'Tell me a bit more about you as a couple and what is your vision for your wedding, I would love to hear from you. (If the wedding date is not decided, give an idea of ​​what you were thinking here)'
+              }
+              required
+            />
+            <button
+              className="letsConnect__submit"
+              type="submit"
+              value="Enviar"
+            >
+              Enviar
+            </button>
+          </form>
+          <ClickTop />
+        </div>
+      )}
+    </>
   );
 };
 

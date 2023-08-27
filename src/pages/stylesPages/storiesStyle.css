@@ -46,6 +46,18 @@
   line-height: 6.3vw;
   text-align: center;
   color: var(--body-white);
+  animation: textAnimation 1.5s forwards;
+}
+
+@keyframes textAnimation {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .storieSlice__container {
   position: absolute;
@@ -58,6 +70,8 @@
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transform: translateY(50%);
 }
 
 .storieSlice__ul {
@@ -76,13 +90,15 @@
   font-size: 1.7vw;
   display: flex;
   gap: 1vw;
-  color: rgb(148, 141, 99);
+  color: var(--text-color-gold);
 }
 .storieSlice__title p {
   margin-top: -0.2vw;
 }
 .storieSlice__description {
   font-size: 1.3vw;
+  font-family: 'Manrope', sans-seri;
+  font-weight: 100;
 }
 .storieSlice__counter {
   position: absolute;
@@ -136,6 +152,8 @@
   justify-content: space-evenly;
   color: var(--body-white);
   align-items: center;
+  opacity: 0;
+  transform: translateY(50%);
 }
 .letsMeetStories__container img {
   position: absolute;
@@ -174,6 +192,8 @@
   justify-content: center;
   align-items: center;
   padding-top: 5vw;
+  opacity: 0;
+  transform: translateY(50%);
 }
 
 .LogoStories__contianer h2 {

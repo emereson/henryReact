@@ -14,6 +14,62 @@ const Stories = () => {
   const [sliceVisible, setSliceVisible] = useState(false);
   const [selectNav, setSelectNav] = useState('all');
   const translation = useSelector((state) => state.translation);
+  const [viewSection, setviewSection] = useState(false);
+  const [viewSection2, setviewSection2] = useState(false);
+  const [viewSection3, setviewSection3] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const section = document.querySelector(
+        '.storieSlice__container'
+      );
+      const section2 = document.querySelector(
+        '.letsMeetStories__container'
+      );
+      const section3 = document.querySelector(
+        '.LogoStories__contianer'
+      );
+
+      if (section) {
+        if (isInViewport(section)) {
+          setviewSection(true);
+        } else {
+          setviewSection(false);
+        }
+      }
+
+      if (section2) {
+        if (isInViewport(section2)) {
+          setviewSection2(true);
+        } else {
+          setviewSection2(false);
+        }
+      }
+
+      if (section3) {
+        if (isInViewport(section3)) {
+          setviewSection3(true);
+        } else {
+          setviewSection3(false);
+        }
+      }
+    };
+
+    const isInViewport = (element) => {
+      const rect = element.getBoundingClientRect();
+      const windowHeight =
+        window.innerHeight || document.documentElement.clientHeight;
+      const topOffset = 50;
+
+      return rect.top + topOffset < windowHeight;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -83,7 +139,11 @@ const Stories = () => {
             </>
           )}
         </h2>
-        <div className="storieSlice__container">
+        <div
+          className={`storieSlice__container ${
+            viewSection ? 'viewAnimation' : ''
+          }`}
+        >
           {storiesSlices?.storiesSlice.map((storieSlice, index) => (
             <StoriesSlice
               key={storieSlice.id}
@@ -120,7 +180,11 @@ const Stories = () => {
       {(selectNav === 'photographs' || selectNav === 'all') && (
         <PhotographsStories selectNav={selectNav} />
       )}
-      <section className="letsMeetStories__container">
+      <section
+        className={`letsMeetStories__container ${
+          viewSection2 ? 'viewAnimation' : ''
+        }`}
+      >
         <h4>
           {translation === 'spanish' ? 'CONOZCAMONOS' : `LET'S MEET`}
         </h4>
@@ -134,7 +198,11 @@ const Stories = () => {
           {translation === 'spanish' ? 'CONTACTAME' : `CONTACT ME`}
         </h4>
       </section>
-      <section className="LogoStories__contianer">
+      <section
+        className={`LogoStories__contianer ${
+          viewSection3 ? 'viewAnimation' : ''
+        }`}
+      >
         <h2>HENRY GIL</h2>
       </section>
       <ClickTop />

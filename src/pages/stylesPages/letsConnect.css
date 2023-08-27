@@ -43,6 +43,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transform: translateY(50%);
 }
 .letsConnect__sectionTwo p {
   color: var(--text-color-white);
@@ -60,11 +62,26 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 20vw;
-  gap: 1vw;
+  gap: 2vw;
+  opacity: 0;
+  transform: translateY(50%);
+}
+
+.letsConnec__form div {
+  position: relative;
+  width: 47%;
+  z-index: 6;
+}
+.letsConnec__form label {
+  position: absolute;
+  font-size: 1vw;
+  color: var(--body-white);
+  font-weight: 400;
+  transition: 1s;
 }
 
 .letsConnec__form input {
-  width: 47%;
+  width: 100%;
   background-color: transparent;
   border: none;
   color: var(--body-white);
@@ -75,11 +92,6 @@
   padding-bottom: 1vw;
   border-bottom: 0.06vw solid var(--body-gray);
   z-index: 6;
-}
-
-.letsConnec__form input::placeholder {
-  color: var(--body-white);
-  font-weight: 400;
 }
 
 .letsConnec__form textarea {

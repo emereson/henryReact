@@ -20,6 +20,10 @@ const Header = () => {
   const handleMouseOut = () => {
     setViewIcon(0);
   };
+
+  const handleToggle = () => {
+    setCloseNav(!closeNav); // Alternar el valor de closeNav
+  };
   return (
     <header
       className={`header__container ${
@@ -35,23 +39,39 @@ const Header = () => {
         HENRY GIL
       </Link>
       <nav className="header__nav">
-        {!closeNav ? (
-          <button
-            className="menu__icon"
-            onClick={() => setCloseNav(true)}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        ) : (
-          <button
-            className="menu__close"
-            onClick={() => setCloseNav(false)}
-          >
-            X
-          </button>
-        )}
+        <button
+          className={`menu__icon ${closeNav ? 'menu__close' : ''}`}
+          onClick={handleToggle}
+        >
+          <span
+            style={
+              closeNav
+                ? {
+                    transform: 'rotateZ(45deg)',
+                    position: 'absolute',
+                  }
+                : { transform: 'rotateZ(0)', position: 'relative' }
+            }
+          ></span>
+          <span
+            style={
+              closeNav
+                ? {
+                    transform: 'rotateZ(-45deg)',
+                    position: 'absolute',
+                  }
+                : { transform: 'rotateZ(0)', position: 'relative' }
+            }
+          ></span>
+          <span
+            style={
+              closeNav
+                ? { opacity: '0' }
+                : { transform: 'rotateZ(0)', position: 'relative' }
+            }
+          ></span>
+        </button>
+
         <ul
           className={`header__menu ${
             closeNav ? 'header__menu--active' : ''

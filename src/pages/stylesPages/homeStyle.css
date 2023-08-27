@@ -37,29 +37,13 @@
   gap: 1vw;
 }
 .title__main.enter {
-  animation: slideIn 1s forwards, fadeIn 1s forwards;
+  animation: slideIn 1s forwards;
 }
 
 .title__sub.enter {
-  animation: slideIn 2s forwards, fadeIn 2s forwards;
-}
-@keyframes slideIn {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(0);
-  }
+  animation: slideIn 2s forwards;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 /* Videos */
 
 .home__videos {

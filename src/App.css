@@ -11,9 +11,9 @@
 
 .custom-cursor {
   position: fixed;
-  width: 2vw;
-  height: 2vw;
-  margin: -1vw 0 0 -1.5vw;
+  width: 1vw;
+  height: 1vw;
+  margin: -0.5vw 0 0 -0.5vw;
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
   z-index: 9999;
@@ -39,8 +39,8 @@
 }
 
 .clicktop__nav a {
-  color: var(--text-color-white);
-  font-size: 1.3vw;
+  color: var(--body-white);
+  font-size: 1vw;
   letter-spacing: 0.2vw;
   z-index: 10;
   cursor: pointer;
@@ -75,6 +75,60 @@
     transform: translateY(0);
   }
 }
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgb(24, 24, 24);
+  top: 0;
+  left: 0;
+  transition: 1.5s;
+  z-index: 10;
+  overflow: hidden;
+}
+.loading__img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.85);
+  animation: loadingImg 1.5s forwards;
+}
+
+@keyframes loadingImg {
+  0% {
+    transform: translateY(150%);
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.viewAnimation {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: 1.5s;
+  z-index: 6;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 @media (max-width: 660px) {
   .custom-cursor {
     display: none;

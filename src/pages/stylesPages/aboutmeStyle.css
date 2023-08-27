@@ -29,6 +29,7 @@
   left: -15vw;
   width: 50vw;
   height: 100%;
+  animation: slideIn 3s forwards;
 }
 .aboutme__content {
   position: absolute;
@@ -46,6 +47,7 @@
   font-size: 8vw;
   font-weight: 400;
   color: rgb(238, 164, 122);
+  animation: slideIn 1.5s forwards;
 }
 .aboutme__biography {
   position: absolute;
@@ -74,12 +76,12 @@
   align-items: center;
   gap: 2vw;
   padding-left: 2.5vw;
+  animation: slideIn 2s forwards;
 }
 .aboutme__paragraph p {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-    sans-serif;
+  font-family: 'Manrope', sans-seri;
   font-size: 1.38vw;
-  color: var(--text-color-white);
+  color: var(--body-white);
   font-weight: 100;
   line-height: 1.9vw;
 }
@@ -93,6 +95,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transform: translateY(50%);
 }
 
 .aboutme__sectionTwo img {
@@ -101,7 +105,7 @@
 .aboutme__sectionTwo h3 {
   width: 65%;
   position: absolute;
-  color: var(--text-color-white);
+  color: var(--body-white);
   text-align: center;
   font-size: 3vw;
   font-weight: 400;
@@ -115,6 +119,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transform: translateY(50%);
 }
 .aboutme__sectionThree h2 {
   color: rgb(238, 164, 122);
@@ -123,8 +129,9 @@
 }
 
 .aboutme__sectionThree p {
-  color: var(--text-color-white);
+  color: var(--body-white);
   font-size: 1.5vw;
+  font-family: 'Manrope', sans-seri;
 }
 
 /* aboutme__sectionFour */
@@ -135,12 +142,21 @@
   align-items: center;
   gap: 1vw;
   padding-bottom: 4vw;
+  opacity: 0;
+  transform: translateY(50%);
 }
 
 .aboutme__sectionFour img {
   width: 23vw;
   height: 23vw;
   object-fit: cover;
+  filter: brightness(0.8);
+  transition: 0.5s;
+}
+
+.aboutme__sectionFour img:hover {
+  filter: brightness(1.2);
+  transition: 0.5s;
 }
 
 @media (max-width: 660px) {
