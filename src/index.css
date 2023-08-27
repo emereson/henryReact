@@ -31,14 +31,13 @@
 }
 
 @font-face {
-  font-family: 'MiFuente'; /* Nombre que quieras dar a la fuente */
-  src: url('./fonts/font.woff') format('woff'); /* Ruta al archivo de fuente */
-  font-weight: 200; /* O bold, dependiendo de la variante */
-  font-style: normal; /* O italic, dependiendo de la variante */
+  font-family: 'DawnoraLightItalic';
+  src: url('webFonts/DawnoraLightItalic/font.woff2') format('woff2'),
+    url('webFonts/DawnoraLightItalic/font.woff') format('woff');
 }
 body {
   margin: 0 auto;
-  font-family: 'MiFuente';
+  font-family: 'DawnoraLightItalic';
   width: 100%;
   height: 100%;
   min-width: 360px;
