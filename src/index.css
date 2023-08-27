@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: 'MiFuente';
-  src: url('./Fonts/font.woff') format('woff');
+  src: url('./Fonts/font.woff2') format('woff2');
   font-weight: auto; /* O bold, dependiendo de la variante */
 }
 body {
