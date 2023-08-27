@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: 'MiFuente'; /* Nombre que quieras dar a la fuente */
-  src: url('./fonts/font.woff2') format('woff2'); /* Ruta al archivo de fuente */
+  src: url('./fonts/font.woff') format('woff'); /* Ruta al archivo de fuente */
 }
 body {
   margin: 0 auto;
