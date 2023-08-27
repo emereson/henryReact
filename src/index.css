@@ -33,6 +33,8 @@
 @font-face {
   font-family: 'MiFuente'; /* Nombre que quieras dar a la fuente */
   src: url('./fonts/font.woff') format('woff'); /* Ruta al archivo de fuente */
+  font-weight: 200; /* O bold, dependiendo de la variante */
+  font-style: normal; /* O italic, dependiendo de la variante */
 }
 body {
   margin: 0 auto;
