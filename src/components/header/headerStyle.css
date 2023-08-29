@@ -1,13 +1,12 @@
 .header__container {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100vw;
   height: 5vw;
   z-index: 20;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   gap: 25%;
   color: var(--body-white);
 }
@@ -23,7 +22,10 @@
   background-image: url('/effectold.gif');
 }
 .header__logo {
+  position: absolute;
+  left: 3vw;
   font-size: 1.3vw;
+  font-family: 'Bodoni Moda', serif !important;
   letter-spacing: 1.2vw;
   font-weight: 400;
   color: var(--body-white);
@@ -31,14 +33,14 @@
 }
 
 .menu__icon {
-  margin-left: -6.5vw;
-  width: 2.3vw;
-  padding-top: 0.2vw;
+  position: fixed;
+  margin-top: -0.5vw;
+  width: 2vw;
   display: flex;
   flex-direction: column;
   gap: 0.3vw;
   cursor: pointer;
-  z-index: 12;
+  z-index: 20;
   background-color: transparent;
 }
 
@@ -50,13 +52,16 @@
 }
 
 .menu__close {
-  position: relative;
+  position: fixed;
   z-index: 12;
   background-color: transparent;
 }
 
 .header__connect {
+  position: absolute;
+  right: 3vw;
   font-size: 1vw;
+  font-family: 'Manrope', sans-seri;
   letter-spacing: 0.1vw;
   font-weight: 100;
   z-index: 12;
@@ -77,11 +82,37 @@
   background-color: rgb(14, 14, 14);
   z-index: 10;
   transform: translateY(-100%);
-  transition: 1s;
+  transition: 2s;
+  animation: menu 2s forwards;
+}
+
+@keyframes menu {
+  0% {
+    transform: translateY(0);
+  }
+  35% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
 }
 .header__menu--active {
   transform: translateY(0);
-  transition: 1s;
+  transition: 2s;
+  animation: menu--active 2s forwards;
+}
+
+@keyframes menu--active {
+  0% {
+    transform: translateY(-100%);
+  }
+  35% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .header__menu li {
@@ -139,15 +170,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
+  font-family: 'Manrope', sans-seri;
   letter-spacing: 0.3vw;
   margin-left: -4vw;
   z-index: 12;
 }
 
 .header__menu-buttons {
-  position: absolute;
-  left: 8vw !important;
+  position: relative;
+  top: 2.5vw !important;
+  width: 10vw !important;
+  left: auto !important;
+  right: 1vw !important;
+}
+.header__menu-buttons button {
+  font-size: 1.2vw !important;
 }
 
 @media (max-width: 800px) {

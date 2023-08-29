@@ -7,6 +7,7 @@ import VideosStories from '../components/stories/VideosStories';
 import PhotographsStories from '../components/stories/PhotographsStories';
 import { useSelector } from 'react-redux';
 import ClickTop from '../components/ClickTop';
+import { Link } from 'react-router-dom';
 
 const Stories = () => {
   const [storiesSlices, setStoriesSlices] = useState();
@@ -127,14 +128,14 @@ const Stories = () => {
         <h2 className="storiesStart__h2">
           {translation === 'spanish' ? (
             <>
-              FOTÓGRAFO <br />
-              Y VIDEOGRABADOR <br />
-              PARA BODAS
+              FOTOGRAFO <br />
+              & VIDEOGRAFO <br />
+              DE BODAS
             </>
           ) : (
             <>
               PHOTOGRAPHER <br />
-              E VIDEOGRAPHER <br />
+              & VIDEOGRAPHER <br />
               FOR WEDDINGS
             </>
           )}
@@ -190,20 +191,21 @@ const Stories = () => {
         </h4>
         <p>
           {translation === 'spanish'
-            ? `Cada pareja y su entorno, preferencias personales y compromiso hacen que cada boda sea un proyecto inconparable`
+            ? `Cada pareja y su entorno, preferencias personales y compromisos hacen que cada boda sea incomparable`
             : `Each couple and their environment, personal preferences and commitment make each wedding an unparalleled project`}
         </p>
         <img src="/letsMeet.png" alt="Let's Meet" />
-        <h4>
+
+        <Link to="/lets-connect">
           {translation === 'spanish' ? 'CONTACTAME' : `CONTACT ME`}
-        </h4>
+        </Link>
       </section>
       <section
         className={`LogoStories__contianer ${
           viewSection3 ? 'viewAnimation' : ''
         }`}
       >
-        <h2>HENRY GIL</h2>
+        <Link to="/about">HENRY GIL</Link>
       </section>
       <ClickTop />
     </div>

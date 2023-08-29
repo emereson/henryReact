@@ -26,6 +26,7 @@ const Header = () => {
   const handleToggle = () => {
     setCloseNav(!closeNav); // Alternar el valor de closeNav
   };
+
   return (
     <header
       className={`header__container ${
@@ -85,8 +86,10 @@ const Header = () => {
             }`}
           ></span>
           <NavItem
-            to="/"
-            label={translation === 'spanish' ? 'MENU' : 'HOME'}
+            to="/stories"
+            label={
+              translation === 'spanish' ? 'HISTORIAS' : 'STORIES'
+            }
             viewIcon={viewIcon}
             onMouseOver={() =>
               handleMouseOver(
@@ -144,7 +147,7 @@ const Header = () => {
                     : {}
                 }
               >
-                ENG
+                EN
               </button>
               <button
                 onClick={() => dispatch(setTranslation('spanish'))}
@@ -154,7 +157,7 @@ const Header = () => {
                     : {}
                 }
               >
-                ESP
+                ES
               </button>
             </div>
             henrygilweddings.com

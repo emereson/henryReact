@@ -12,9 +12,6 @@ const Services = ({ translation }) => {
     const handleScroll = () => {
       const section = document.querySelector('.services__sectionTwo');
       const section2 = document.querySelector('.services__img');
-      const section3 = document.querySelector(
-        '.services__sectionThree'
-      );
 
       if (section) {
         if (isInViewport(section)) {
@@ -31,6 +28,33 @@ const Services = ({ translation }) => {
           setviewSection2(false);
         }
       }
+    };
+
+    const isInViewport = (element) => {
+      const rect = element.getBoundingClientRect();
+      const windowHeight =
+        window.innerHeight || document.documentElement.clientHeight;
+      const topOffset = 50;
+
+      return rect.top + topOffset < windowHeight;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  setTimeout(() => {
+    setloading(true);
+  }, 2000);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const section3 = document.querySelector(
+        '.services__sectionThree'
+      );
 
       if (section3) {
         if (isInViewport(section3)) {
@@ -45,7 +69,7 @@ const Services = ({ translation }) => {
       const rect = element.getBoundingClientRect();
       const windowHeight =
         window.innerHeight || document.documentElement.clientHeight;
-      const topOffset = 50;
+      const topOffset = -500;
 
       return rect.top + topOffset < windowHeight;
     };

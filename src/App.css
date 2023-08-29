@@ -27,6 +27,7 @@
   width: 100%;
   height: 13vh;
   display: flex;
+  font-family: 'Manrope', sans-seri;
   justify-content: space-between;
   padding: 0 4svw 2vw 4vw;
   z-index: 5;
@@ -51,7 +52,7 @@
 }
 
 .clicktop__navTwo {
-  margin-left: -4vw;
+  margin-left: -8vw;
 }
 .arrow__top {
   z-index: 5;

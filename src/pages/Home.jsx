@@ -35,11 +35,14 @@ const Home = () => {
       >
         <h1 className={`title__main ${animate ? 'enter' : ''}`}>
           <span></span>{' '}
-          {translation === 'spanish' ? 'CONTAMOS' : ' WE TELL'}
+          {translation === 'spanish' ? 'CONGELAMOS' : 'WE FREEZE '}
         </h1>
 
         <h2 className={`title__sub ${animate ? 'enter' : ''}`}>
-          {translation === 'spanish' ? 'HISTORIAS' : ' STORIES'}
+          {translation === 'spanish' ? 'MOMENTOS' : ' MOMENTS'}
+        </h2>
+        <h2 className={`title__sub ${animate ? 'enter' : ''}`}>
+          {translation === 'spanish' ? 'PARA SIEMPRE' : ' FOREVER'}
         </h2>
       </Link>
 
@@ -97,7 +100,7 @@ const Home = () => {
               : {}
           }
         >
-          ENG
+          EN
         </button>
         <button
           onClick={() => dispatch(setTranslation('spanish'))}
@@ -107,7 +110,7 @@ const Home = () => {
               : {}
           }
         >
-          ESP
+          ES
         </button>
       </div>
     </div>

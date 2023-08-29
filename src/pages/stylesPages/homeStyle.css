@@ -18,6 +18,7 @@
   align-items: start;
   margin-left: 3.5vw;
   z-index: 5;
+  line-height: 9vw;
 }
 
 .home__titles span {
@@ -98,8 +99,8 @@
   color: var(--body-white);
   background-color: transparent;
   font-size: 1.5vw;
-  font-family: 'Playfair Display', serif;
-  font-weight: 800;
+  font-family: 'Manrope', sans-seri;
+  font-weight: 400;
   width: 5vw;
   border: none;
   transition: 0.5s;

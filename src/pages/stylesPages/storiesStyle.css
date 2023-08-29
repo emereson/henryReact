@@ -13,6 +13,7 @@
     rgb(31, 22, 13),
     rgb(52, 43, 38)
   );
+  overflow: hidden;
 }
 .stories__start {
   position: relative;
@@ -83,7 +84,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2vw;
+  gap: 1vw;
 }
 
 .storieSlice__title {
@@ -96,7 +97,7 @@
   margin-top: -0.2vw;
 }
 .storieSlice__description {
-  font-size: 1.3vw;
+  font-size: 1.1vw;
   font-family: 'Manrope', sans-seri;
   font-weight: 100;
 }
@@ -104,13 +105,13 @@
   position: absolute;
   bottom: 8vw;
   display: flex;
-  gap: 0.5vw;
+  gap: 0.3vw;
   z-index: 5;
 }
 
 .storieSlice__counter span {
-  width: 0.8vw;
-  height: 0.8vw;
+  width: 0.5vw;
+  height: 0.5vw;
   background-color: rgba(255, 255, 255, 0.61);
   border-radius: 50%;
 }
@@ -132,6 +133,7 @@
 }
 
 .navStories__contianer li {
+  font-family: 'Manrope', sans-seri;
   font-size: 1.6vw;
   font-weight: 300;
   color: var(--text-color-beigh);
@@ -169,6 +171,15 @@
   color: var(--text-color-white);
   font-weight: 400;
   font-size: 1.3vw;
+  font-family: 'Manrope', sans-seri;
+}
+
+.letsMeetStories__container a {
+  z-index: 5;
+  color: var(--text-color-white);
+  font-weight: 400;
+  font-size: 1.3vw;
+  font-family: 'Manrope', sans-seri;
 }
 
 .letsMeetStories__container p {
@@ -178,10 +189,9 @@
   font-size: 3.2vw;
   line-height: 3vw;
   text-align: center;
-  font-family: 'Manrope', sans-seri;
   font-weight: 200;
   padding: 3vw 0 8vw 0;
-  margin-top: -4vw;
+  margin-top: 4vw;
 }
 
 /* Logo Stories contianer */
@@ -197,7 +207,7 @@
   transform: translateY(50%);
 }
 
-.LogoStories__contianer h2 {
+.LogoStories__contianer a {
   color: var(--body-white);
   font-size: 6vw;
   font-weight: 400;

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './stylesPages/filmsStyle.css';
 import ClickTop from '../components/ClickTop';
+import { Link } from 'react-router-dom';
 
 const Films = ({ translation }) => {
   const [viewSection, setviewSection] = useState(false);
@@ -83,6 +84,13 @@ const Films = ({ translation }) => {
           <section className="films__section">
             <img src="./grupo2.jpg" alt="Mis Films" />
             <h1>FILMS</h1>
+            <Link
+              className="films__link films__lin-right"
+              to="/photo"
+              title="Photo Henry"
+            >
+              <i class="bx bx-chevron-right"></i>
+            </Link>
           </section>
           <section className="films__sectionTwo">
             <ul>
