@@ -2,23 +2,18 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
 import Header from './components/header/Header';
 import { useSelector } from 'react-redux';
-import React, { Suspense, lazy, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import LoadingPage from './pages/LoadingPage';
-
-const Home = lazy(() => import('./pages/Home'));
-const Stories = lazy(() => import('./pages/Stories'));
-const VideoInformation = lazy(() =>
-  import('./pages/VideoInformation')
-);
-const PhotograpyInfomation = React.lazy(() =>
-  import('./pages/PhotograpyInfomation')
-);
-const AboutMe = lazy(() => import('./pages/AboutMe'));
-const Services = lazy(() => import('./pages/Services'));
-const Info = lazy(() => import('./pages/Info'));
-const Films = lazy(() => import('./pages/Films'));
-const Photo = lazy(() => import('./pages/Photo'));
-const LetsConnect = lazy(() => import('./pages/LetsConnect'));
+import VideoInformation from './pages/VideoInformation';
+import Home from './pages/Home';
+import Stories from './pages/Stories';
+import AboutMe from './pages/AboutMe';
+import Services from './pages/Services';
+import Info from './pages/Info';
+import Films from './pages/Films';
+import Photo from './pages/Photo';
+import LetsConnect from './pages/LetsConnect';
+import PhotograpyInfomation from './pages/PhotograpyInfomation';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -66,44 +61,42 @@ function App() {
       {!viewloading ? (
         <LoadingPage viewloading={viewloading} />
       ) : (
-        <Suspense fallback={null}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/stories" element={<Stories />} />
-            <Route
-              path="/about"
-              element={<AboutMe translation={translation} />}
-            />
-            <Route
-              path="/services"
-              element={<Services translation={translation} />}
-            />
-            <Route
-              path="/info"
-              element={<Info translation={translation} />}
-            />
-            <Route
-              path="/films"
-              element={<Films translation={translation} />}
-            />
-            <Route
-              path="/photo"
-              element={<Photo translation={translation} />}
-            />
-            <Route
-              path="/lets-connect"
-              element={<LetsConnect translation={translation} />}
-            />
-            <Route
-              path="/videoInformation/:id"
-              element={<VideoInformation />}
-            />
-            <Route
-              path="/photograpyInfomation/:id"
-              element={<PhotograpyInfomation />}
-            />
-          </Routes>
-        </Suspense>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/stories" element={<Stories />} />
+          <Route
+            path="/about"
+            element={<AboutMe translation={translation} />}
+          />
+          <Route
+            path="/services"
+            element={<Services translation={translation} />}
+          />
+          <Route
+            path="/info"
+            element={<Info translation={translation} />}
+          />
+          <Route
+            path="/films"
+            element={<Films translation={translation} />}
+          />
+          <Route
+            path="/photo"
+            element={<Photo translation={translation} />}
+          />
+          <Route
+            path="/lets-connect"
+            element={<LetsConnect translation={translation} />}
+          />
+          <Route
+            path="/videoInformation/:id"
+            element={<VideoInformation />}
+          />
+          <Route
+            path="/photograpyInfomation/:id"
+            element={<PhotograpyInfomation />}
+          />
+        </Routes>
       )}
     </>
   );

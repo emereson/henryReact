@@ -20,7 +20,10 @@ const CardVideosStories = ({ videoStorie, index }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setsliderDataVideo((prevSlider) => (prevSlider + 1) % videoStorie.dataVideos.length);
+      setsliderDataVideo(
+        (prevSlider) =>
+          (prevSlider + 1) % videoStorie.dataVideos.length
+      );
     }, 4000);
 
     return () => {
@@ -30,7 +33,9 @@ const CardVideosStories = ({ videoStorie, index }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const cardEventElement = document.getElementById(`idVideoStories${index}`);
+      const cardEventElement = document.getElementById(
+        `idVideoStories${index}`
+      );
 
       if (cardEventElement) {
         setvideoVisible(isInViewport(cardEventElement));
@@ -39,7 +44,8 @@ const CardVideosStories = ({ videoStorie, index }) => {
 
     const isInViewport = (element) => {
       const rect = element.getBoundingClientRect();
-      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+      const windowHeight =
+        window.innerHeight || document.documentElement.clientHeight;
       const topOffset = -400;
 
       return rect.top + topOffset < windowHeight;
@@ -81,8 +87,13 @@ const CardVideosStories = ({ videoStorie, index }) => {
         onMouseEnter={toggleVideoPlay}
         onMouseLeave={toggleVideoPause}
       ></span>
-      <h3 className="cardVideosStories__h3" style={playVideo ? { opacity: '1' } : { opacity: '0' }}>
-        {translation === 'spanish' ? videoStorie.title : videoStorie.titleEng}
+      <h3
+        className="cardVideosStories__h3"
+        style={playVideo ? { opacity: '1' } : { opacity: '0' }}
+      >
+        {translation === 'spanish'
+          ? videoStorie.title
+          : videoStorie.titleEng}
       </h3>
 
       <ReactPlayer
@@ -112,10 +123,16 @@ const CardVideosStories = ({ videoStorie, index }) => {
           >
             {dataVideo.link ? (
               <a href={dataVideo.link}>
-                {translation === 'spanish' ? dataVideo.description : dataVideo.descriptionEng}
+                {translation === 'spanish'
+                  ? dataVideo.description
+                  : dataVideo.descriptionEng}
               </a>
             ) : (
-              <p>{translation === 'spanish' ? dataVideo.description : dataVideo.descriptionEng}</p>
+              <p>
+                {translation === 'spanish'
+                  ? dataVideo.description
+                  : dataVideo.descriptionEng}
+              </p>
             )}
           </section>
         ))}
