@@ -61,7 +61,7 @@ const AboutMe = ({ translation }) => {
 
   setTimeout(() => {
     setloading(true);
-  }, 2000);
+  }, 3000);
 
   return (
     <>
