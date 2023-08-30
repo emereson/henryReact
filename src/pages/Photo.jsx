@@ -89,7 +89,7 @@ const Photo = ({ translation }) => {
               to="/films"
               title="Films Henry"
             >
-              <i class="bx bx-chevron-left"></i>
+              <i className="bx bx-chevron-left"></i>
             </Link>
           </section>
           <section className="films__sectionTwo">
