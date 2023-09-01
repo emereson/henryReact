@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import ReactPlayer from 'react-player';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -9,9 +9,17 @@ const CardVideosStories = ({ videoStorie, index }) => {
   const [videoVisible, setvideoVisible] = useState(false);
   const navigate = useNavigate();
   const translation = useSelector((state) => state.translation);
+  const playerRef = useRef(null);
+
+  const handlePlayVideo = () => {
+    if (playerRef.current) {
+      playerRef.current.seekTo(40, 'seconds'); // Busca el segundo 40
+    }
+  };
 
   const toggleVideoPlay = () => {
     setPlayVideo(true);
+    handlePlayVideo();
   };
 
   const toggleVideoPause = () => {
@@ -87,7 +95,14 @@ const CardVideosStories = ({ videoStorie, index }) => {
         onMouseEnter={toggleVideoPlay}
         onMouseLeave={toggleVideoPause}
       ></span>
-
+      <h3
+        className="cardVideosStories__h3"
+        style={playVideo ? { opacity: '1' } : { opacity: '0' }}
+      >
+        {translation === 'spanish'
+          ? videoStorie.title
+          : videoStorie.titleEng}
+      </h3>
       <ReactPlayer
         className="cardVideosStories__video"
         playing={playVideo}
@@ -95,7 +110,10 @@ const CardVideosStories = ({ videoStorie, index }) => {
         url={videoStorie?.videoUrl}
         width="100%"
         height="85%"
+        controls={false}
+        ref={playerRef}
       />
+
       <img
         className="cardVideosStories__img"
         style={playVideo ? { opacity: '0' } : { opacity: '1' }}
