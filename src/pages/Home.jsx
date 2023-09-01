@@ -93,7 +93,7 @@ const Home = () => {
       </nav>
       <div className="translation__container">
         <button
-          id="es"
+          id="en"
           aria-label="english"
           onClick={() => dispatch(setTranslation('english'))}
           style={
