@@ -87,14 +87,6 @@ const CardVideosStories = ({ videoStorie, index }) => {
         onMouseEnter={toggleVideoPlay}
         onMouseLeave={toggleVideoPause}
       ></span>
-      <h3
-        className="cardVideosStories__h3"
-        style={playVideo ? { opacity: '1' } : { opacity: '0' }}
-      >
-        {translation === 'spanish'
-          ? videoStorie.title
-          : videoStorie.titleEng}
-      </h3>
 
       <ReactPlayer
         className="cardVideosStories__video"
