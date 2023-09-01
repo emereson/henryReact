@@ -32,7 +32,7 @@
   z-index: 12;
 }
 
-.menu__icon {
+.headerMenu__icon {
   position: fixed;
   margin-top: -0.5vw;
   width: 2vw;
@@ -44,14 +44,14 @@
   background-color: transparent;
 }
 
-.menu__icon span {
+.headerMenu__icon span {
   width: 100%;
   height: 0.1vw;
   background-color: var(--text-color-white);
   transition: 0.5s;
 }
 
-.menu__close {
+.headerMenu__close {
   position: fixed;
   z-index: 12;
   background-color: transparent;
@@ -115,7 +115,7 @@
   }
 }
 
-.header__menu li {
+.header__menu div {
   position: static;
   width: 100%;
   height: 22%;
@@ -127,7 +127,7 @@
 
   transition: 0.8s;
 }
-.header__menu li:hover {
+.header__menu div:hover {
   background-color: var(--text-color-gold);
   transition: 0.8s;
 }

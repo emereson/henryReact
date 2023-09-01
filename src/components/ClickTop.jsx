@@ -16,6 +16,7 @@ const ClickTop = () => {
           name="Facebook"
           rel="noopener noreferrer"
           target="_blank"
+          aria-label="Read more about Seminole tax hike"
         >
           <i className="bx bxl-facebook-circle"></i>
         </a>
@@ -25,6 +26,7 @@ const ClickTop = () => {
           name="Instagram"
           rel="noopener noreferrer"
           target="_blank"
+          aria-label="Read more about Seminole tax hike"
         >
           <i className="bx bxl-instagram-alt"></i>
         </a>
@@ -34,6 +36,7 @@ const ClickTop = () => {
           name="pinterest"
           rel="noopener noreferrer"
           target="_blank"
+          aria-label="Read more about Seminole tax hike"
         >
           <i className="bx bxl-pinterest"></i>
         </a>
@@ -45,6 +48,7 @@ const ClickTop = () => {
           name="Facebook"
           rel="noopener noreferrer"
           target="_blank"
+          aria-label="Read more about Seminole tax hike"
         >
           FACEBOOK
         </a>
@@ -54,6 +58,7 @@ const ClickTop = () => {
           name="Instagram"
           rel="noopener noreferrer"
           target="_blank"
+          aria-label="Read more about Seminole tax hike"
         >
           INSTAGRAM
         </a>
@@ -63,6 +68,7 @@ const ClickTop = () => {
           name="YouTube"
           rel="noopener noreferrer"
           target="_blank"
+          aria-label="Read more about Seminole tax hike"
         >
           YOUTUBE
         </a>

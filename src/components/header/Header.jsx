@@ -43,7 +43,11 @@ const Header = () => {
       </Link>
       <nav className="header__nav">
         <button
-          className={`menu__icon ${closeNav ? 'menu__close' : ''}`}
+          id="menu"
+          aria-label="Menu"
+          className={`headerMenu__icon ${
+            closeNav ? 'headerMenu__close' : ''
+          }`}
           onClick={handleToggle}
         >
           <span
@@ -75,7 +79,7 @@ const Header = () => {
           ></span>
         </button>
 
-        <ul
+        <section
           className={`header__menu ${
             closeNav ? 'header__menu--active' : ''
           }`}
@@ -140,6 +144,8 @@ const Header = () => {
           <div className="header__menu-correo">
             <div className="translation__container header__menu-buttons">
               <button
+                id="en"
+                aria-label="english"
                 onClick={() => dispatch(setTranslation('english'))}
                 style={
                   translation === 'english'
@@ -150,6 +156,8 @@ const Header = () => {
                 EN
               </button>
               <button
+                id="es"
+                aria-label="spanish"
                 onClick={() => dispatch(setTranslation('spanish'))}
                 style={
                   translation === 'spanish'
@@ -162,7 +170,7 @@ const Header = () => {
             </div>
             henrygilweddings.com
           </div>
-        </ul>
+        </section>
       </nav>
       <Link
         onClick={handleLinkClick}
@@ -184,7 +192,7 @@ const NavItem = ({
   onMouseOut,
   onClick,
 }) => (
-  <li
+  <div
     onMouseOver={onMouseOver}
     onMouseOut={onMouseOut}
     onClick={onClick}
@@ -197,7 +205,7 @@ const NavItem = ({
         }`}
       ></i>
     </Link>
-  </li>
+  </div>
 );
 
 export default Header;
