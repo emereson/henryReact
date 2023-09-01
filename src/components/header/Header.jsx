@@ -144,7 +144,7 @@ const Header = () => {
           <div className="header__menu-correo">
             <div className="translation__container header__menu-buttons">
               <button
-                id="en"
+                id="header-en"
                 aria-label="english"
                 onClick={() => dispatch(setTranslation('english'))}
                 style={
@@ -156,7 +156,7 @@ const Header = () => {
                 EN
               </button>
               <button
-                id="es"
+                id="header-es"
                 aria-label="spanish"
                 onClick={() => dispatch(setTranslation('spanish'))}
                 style={
