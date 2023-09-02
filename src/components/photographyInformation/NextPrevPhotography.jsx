@@ -30,6 +30,8 @@ const NextPrevPhotography = () => {
     <div className="nextPrevVideo__container">
       <button
         className="nextPrevVideo__prev"
+        id="video-prev"
+        aria-label="button"
         onClick={() => navigateToVideo(currentIndex - 1)}
         style={
           currentIndex === 0
@@ -42,6 +44,8 @@ const NextPrevPhotography = () => {
 
       <button
         className="nextPrevVideo__next"
+        id="video-next"
+        aria-label="button"
         onClick={() => navigateToVideo(currentIndex + 1)}
         style={
           currentIndex === nextPrevPhotography?.length - 1
