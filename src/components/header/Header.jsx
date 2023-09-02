@@ -193,6 +193,7 @@ const NavItem = ({
   onClick,
 }) => (
   <div
+    className="header__link"
     onMouseOver={onMouseOver}
     onMouseOut={onMouseOut}
     onClick={onClick}

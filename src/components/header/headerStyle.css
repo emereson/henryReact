@@ -115,7 +115,7 @@
   }
 }
 
-.header__menu div {
+.header__link {
   position: static;
   width: 100%;
   height: 22%;
@@ -127,7 +127,7 @@
 
   transition: 0.8s;
 }
-.header__menu div:hover {
+.header__link:hover {
   background-color: var(--text-color-gold);
   transition: 0.8s;
 }
@@ -183,6 +183,7 @@
   width: 10vw !important;
   left: auto !important;
   right: 1vw !important;
+  border: none !important;
 }
 .header__menu-buttons button {
   font-size: 1.2vw !important;
@@ -200,21 +201,28 @@
     font-size: 3.5vw;
     text-align: center;
   }
-  .menu__icon {
+  .headerMenu__icon {
     width: 5vw;
     gap: 0.6vw;
   }
-  .menu__icon span {
+  .headerMenu__icon span {
     height: 0.5vw;
   }
-  .menu__close {
+  .headerMenu__close {
     font-size: 5vw;
   }
   .header__menu-correo {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
   .header__menu-buttons {
-    bottom: 1vw !important;
-    left: 35% !important;
+    position: relative !important;
+    left: -10vw !important;
+    margin-top: -5vw;
+  }
+  .header__menu-buttons button {
+    font-size: 5vw !important;
+    margin: 0 !important;
+    border: none !important;
+    padding: 0 2vw 0 2vw;
   }
 }
