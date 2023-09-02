@@ -138,9 +138,18 @@
   }
   .letsConnec__form {
     gap: 6vw;
+    padding-top: 20vw;
+  }
+  .letsConnec__form div {
+    width: 80%;
+  }
+
+  .letsConnec__form label {
+    font-size: 3vw;
+    bottom: 10vw;
   }
   .letsConnec__form input {
-    width: 80%;
+    width: 100%;
     font-size: 3vw;
   }
   .letsConnec__form textarea {
