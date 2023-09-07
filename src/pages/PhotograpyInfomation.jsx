@@ -100,7 +100,7 @@ const PhotograpyInfomation = () => {
         </p>
         <nav className="photographyInformation-frontPage-links">
           <a
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/henry.gil.10236/"
             alt="Link to Facebook page"
             name="Facebook"
             rel="noopener noreferrer"
@@ -109,7 +109,7 @@ const PhotograpyInfomation = () => {
             <i className="bx bxl-facebook-circle"></i>
           </a>
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/henry_gil/"
             alt="Link to Instagram page"
             name="Instagram"
             rel="noopener noreferrer"

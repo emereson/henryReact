@@ -9,41 +9,9 @@ const ClickTop = () => {
   };
   return (
     <section className="clicktop__container">
-      <nav className="clicktop__nav">
+      <nav className="clicktop__nav ">
         <a
-          href="https://www.facebook.com/"
-          alt="Link to Facebook page"
-          name="Facebook"
-          rel="noopener noreferrer"
-          target="_blank"
-          aria-label="Read more about Seminole tax hike"
-        >
-          <i className="bx bxl-facebook-circle"></i>
-        </a>
-        <a
-          href="https://www.instagram.com/"
-          alt="Link to Instagram page"
-          name="Instagram"
-          rel="noopener noreferrer"
-          target="_blank"
-          aria-label="Read more about Seminole tax hike"
-        >
-          <i className="bx bxl-instagram-alt"></i>
-        </a>
-        <a
-          href="https://www.pinterest.com/"
-          alt="Link to pinterest page"
-          name="pinterest"
-          rel="noopener noreferrer"
-          target="_blank"
-          aria-label="Read more about Seminole tax hike"
-        >
-          <i className="bx bxl-pinterest"></i>
-        </a>
-      </nav>
-      <nav className="clicktop__nav clicktop__navTwo">
-        <a
-          href="https://www.facebook.com/"
+          href="https://www.facebook.com/henry.gil.10236/"
           alt="Link to Facebook page"
           name="Facebook"
           rel="noopener noreferrer"
@@ -53,7 +21,7 @@ const ClickTop = () => {
           FACEBOOK
         </a>
         <a
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/henry_gil/"
           alt="Link to Instagram page"
           name="Instagram"
           rel="noopener noreferrer"
@@ -63,7 +31,7 @@ const ClickTop = () => {
           INSTAGRAM
         </a>
         <a
-          href="https://www.youtube.com/"
+          href="https://www.youtube.com/channel/UCDuGXnHEiwZoemJh4YgbVDQ"
           alt="Link to YouTube page"
           name="YouTube"
           rel="noopener noreferrer"

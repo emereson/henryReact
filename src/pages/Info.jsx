@@ -56,35 +56,6 @@ const Info = ({ translation }) => {
                 : 'I offer 3 package options with differences in the amount of coverage hours and quantity of photos.'}
             </p>
           </Link>
-          <nav className="clicktop__nav info__nav">
-            <a
-              href="https://www.facebook.com/"
-              alt="Link to Facebook page"
-              name="Facebook"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <i className="bx bxl-facebook-circle"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/"
-              alt="Link to Instagram page"
-              name="Instagram"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <i className="bx bxl-instagram-alt"></i>
-            </a>
-            <a
-              href="https://www.pinterest.com/"
-              alt="Link to pinterest page"
-              name="pinterest"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <i className="bx bxl-pinterest"></i>
-            </a>
-          </nav>
         </div>
       )}
     </>

@@ -60,18 +60,6 @@
   animation: slideIn 1.5s forwards;
 }
 
-.info__nav {
-  position: absolute;
-  bottom: 2vw;
-  padding-left: 1vw;
-  z-index: 6;
-}
-.info__nav a {
-  overflow: unset;
-}
-.info__nav i {
-  font-size: 2.5vw;
-}
 @media (max-width: 660px) {
   .info__container {
     flex-direction: column;

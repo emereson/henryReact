@@ -56,7 +56,7 @@ const Home = () => {
         <ul className="home__ul">
           <li>
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/henry.gil.10236/"
               alt="Link to Facebook page"
               name="Facebook"
               rel="noopener noreferrer"
@@ -68,7 +68,7 @@ const Home = () => {
 
           <li>
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/henry_gil/"
               alt="Link to Instagram page"
               name="Instagram"
               rel="noopener noreferrer"
@@ -80,7 +80,7 @@ const Home = () => {
 
           <li>
             <a
-              href="https://www.youtube.com/"
+              href="https://www.youtube.com/channel/UCDuGXnHEiwZoemJh4YgbVDQ"
               alt="Link to YouTube page"
               name="YouTube"
               rel="noopener noreferrer"

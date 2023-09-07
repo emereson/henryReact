@@ -28,7 +28,7 @@
   height: 13vh;
   display: flex;
   font-family: 'Manrope', sans-seri;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 4svw 2vw 4vw;
   z-index: 5;
   align-items: center;
@@ -51,12 +51,10 @@
   margin-left: -1vw;
 }
 
-.clicktop__navTwo {
-  margin-left: -8vw;
-}
 .arrow__top {
+  position: absolute;
   z-index: 5;
-  bottom: 8%;
+  top: 30%;
   right: 3%;
   color: var(--text-color-white);
   display: flex;
