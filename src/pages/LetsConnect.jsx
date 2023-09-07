@@ -71,10 +71,10 @@ const LetsConnect = ({ translation }) => {
 
     emailjs
       .sendForm(
-        'service_4jm7prj',
-        'template_sjet75m',
+        'service_pezmeo8',
+        'template_opbl4jv',
         form,
-        'Fe1focVs4CYeoB-Ic'
+        '1FEJbPsPE46KyIOzy'
       )
       .then((result) => {
         form.reset();
