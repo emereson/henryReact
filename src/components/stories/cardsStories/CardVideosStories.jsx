@@ -107,7 +107,7 @@ const CardVideosStories = ({ videoStorie, index }) => {
         className="cardVideosStories__video"
         playing={playVideo}
         volume={0}
-        url={videoStorie?.videoUrl}
+        url={videoStorie?.previewvideourl}
         width="100%"
         height="85%"
         controls={false}
