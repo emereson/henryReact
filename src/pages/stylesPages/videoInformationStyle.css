@@ -71,6 +71,12 @@
   align-items: center;
   background-color: var(--body-black);
 }
+.react-player {
+  display: flex;
+  justify-content: center;
+
+  max-height: 98vh;
+}
 .videoInformation-video h2 {
   position: absolute;
   color: var(--text-color-white);

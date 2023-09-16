@@ -111,6 +111,7 @@ const VideoInformation = () => {
         />
         {videoInformation && (
           <ReactPlayer
+            className="react-player"
             ref={videoRef}
             url={videoInformation.videoUrl || ''}
             playing={playVideo}
