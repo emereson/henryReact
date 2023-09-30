@@ -33,6 +33,7 @@
 }
 
 .loadingPage__container img {
+  width: 50%;
   animation: loading 3s both;
 }
 
@@ -55,4 +56,7 @@
     width: 78vw;
     height: 1vw;
   }
+}
+.loadingPage__container img {
+  width: 90%;
 }

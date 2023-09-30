@@ -200,7 +200,7 @@ const AboutMe = ({ translation }) => {
             <img src="./295.png" alt="fotos de bodas" />
             <img src="./capa6.png" alt="fotos de bodas" />
             <img src="./278.png" alt="fotos de bodas" />
-            <img src="./0801_2.jpg" alt="fotos de bodas" />
+            <img src="./10.jpg" alt="fotos de bodas" />
           </section>
           <ClickTop />
         </div>
