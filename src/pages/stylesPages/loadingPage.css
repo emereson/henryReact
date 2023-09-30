@@ -33,7 +33,7 @@
 }
 
 .loadingPage__container img {
-  width: 50%;
+  width: 30%;
   animation: loading 3s both;
 }
 
