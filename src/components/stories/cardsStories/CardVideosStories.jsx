@@ -112,6 +112,7 @@ const CardVideosStories = ({ videoStorie, index }) => {
         height="85%"
         controls={false}
         ref={playerRef}
+        loop={true}
       />
 
       <img
