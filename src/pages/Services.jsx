@@ -110,7 +110,7 @@ const Services = ({ translation }) => {
               viewSection ? 'viewAnimation' : ''
             }`}
           >
-            <img src="./012.jpg" alt="" />
+            <img src="./01.jpg" alt="" />
             <div className="services__sectionTwo-text">
               <h2>
                 {translation === 'spanish'
@@ -136,8 +136,9 @@ const Services = ({ translation }) => {
                       </>
                     ) : (
                       <>
-                        The wedding photo album is a classic memory
-                        that cannot be missing to travel back in time.
+                        The wedding photo album is a classic souvenir
+                        that is essential to be able to travel back in
+                        time.
                         <br />
                         It is a tangible memory that you can keep as
                         an archive and record of your life.
@@ -153,8 +154,8 @@ const Services = ({ translation }) => {
                   </h3>
                   <p>
                     {translation === 'spanish'
-                      ? 'Es mi sello de calidad editar cada foto, una por una para asegurar que cada foto sea un recuerdo memorable con un toque cinematográfico documental.'
-                      : 'It is my hallmark of quality to edit each photo, one by one to ensure that each photo is a memorable memory with a documentary cinematic touch.'}
+                      ? 'Es mi sello de calidad editar cada foto, una a una para asegurar que cada foto sea un recuerdo memorable con un toque cinematográfico documental.'
+                      : 'It is my quality check to edit each photo, one by one to ensure that each photo is a memorable moment with a documentary cinematic touch.'}
                   </p>
                 </li>
               </ul>
@@ -191,8 +192,8 @@ const Services = ({ translation }) => {
                   </h3>
                   <p>
                     {translation === 'spanish'
-                      ? 'Me encantan las bodas en las que se toma cada detalle con mucha importancia, en las que puedes respirar y relajarte, disfrutar con tranquilidad y sin prisas. Estoy dispuesto a acompañarte a partir de 8 horas en adelante.'
-                      : 'I love weddings in which every detail is taken with great importance, in which you can breathe and relax, enjoy calmly and without haste. I am willing to accompany you from 8 am onwards.'}
+                      ? 'Me encantan las bodas en las que se toma cada detalle con mucha importancia, en las que puedes respirar y relajarte, disfrutar con tranquilidad y sin prisas. Estoy dispuesto a acompañarte a partir de 2 días en adelante.'
+                      : 'I love weddings in which every detail is taken with great importance. Which means you can breathe and relax, and enjoy your day calmly, without rushing. I am willing to accompany you from 2 days onwards.'}
                   </p>
                 </li>
                 <li>
@@ -205,7 +206,7 @@ const Services = ({ translation }) => {
                   <p>
                     {translation === 'spanish'
                       ? 'Un momento muy íntimo entre ustedes, donde solo estés tú y tu futur@ espos@, sin nadie más viendo. Me encargaré de que tengas las fotos más hermosas que puedas imaginarte y por supuesto, poder conocernos un poco más, y quitarnos el miedo de ser fotografiados o filmados.'
-                      : `A very intimate moment between you two, where it's just you and your future spouse, with no one else watching. I will ensure that you have the most beautiful photos you can imagine, and of course, to get to know each other a little better, and to overcome the fear of being photographed or filmed`}
+                      : `A very sweet intimate moment between the couple, where it's just you and your future spouse, with no one else around. I will ensure that you have the most beautiful photos you can imagine and of course, this will allow us to get to know each other a little more, and it will help take away the fear of being photographed or filmed.`}
                   </p>
                 </li>
                 <li>
@@ -217,13 +218,13 @@ const Services = ({ translation }) => {
                   </h3>
                   <p>
                     {translation === 'spanish'
-                      ? 'Para parejas amantes de las fotos y de un buen lugar, tú y tu esposa pueden darse una escapada a un bosque o un glamping. Tomas una copa de vino al lado de una fogata.'
-                      : 'For couples who love photos and a good location, you and your wife can take a getaway to a forest or a glamping site. You enjoy a glass of wine by the side of a campfire.'}
+                      ? 'Para parejas amantes de las fotos y de un buen lugar, tú y tu esposa pueden darse una escapada a un bosque o un glamping. Tomar una copa de vino al lado de una fogata.'
+                      : 'For couples who love photos and a good location, you and your wife can take a getaway to a forest or to a glamping spot. Have a glass of wine next to a campfire.'}
                   </p>
                 </li>
               </ul>
             </div>
-            <img src="./0801_2.jpg" alt="" />
+            <img src="./20.jpg" alt="" />
           </section>
           <ClickTop />
         </div>

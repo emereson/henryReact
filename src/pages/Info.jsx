@@ -16,7 +16,7 @@ const Info = ({ translation }) => {
         <div className="loading">
           <img
             className="loading__img "
-            src="./grupo2.jpg"
+            src="./11.jpg"
             alt="MY info"
           />
         </div>
@@ -29,14 +29,14 @@ const Info = ({ translation }) => {
             ></span>
             <img
               style={scaleImg === 2 ? { scale: '1.2' } : {}}
-              src="./grupo2.jpg"
+              src="/11.jpg"
               alt="MY info"
             />
             <h2>FILMS</h2>
             <p>
               {translation === 'spanish'
-                ? 'Ofrezco 3 opciones de paquetes con diferencias en la cantidad de horas de cobertura, la cantidad de horas de videógrafos y la duración de los films.'
-                : "I offer 3 package options with differences in the amount of coverage hours, the quantity of videographers' hours, and the duration of the films."}
+                ? 'Ofrezco 3 opciones de paquetes con diferencias en la cantidad de horas de cobertura, la cantidad de videógrafos y la duración de los films.'
+                : 'I offer 3 package options with differences in quanti of hours of coverage, the number of videographe and the duration of the films.'}
             </p>
           </Link>
           <Link to="/photo" title="Photo Henry">
@@ -46,14 +46,14 @@ const Info = ({ translation }) => {
             ></span>
             <img
               style={scaleImg === 1 ? { scale: '1.2' } : {}}
-              src="./grupo3.jpg"
+              src="./12.jpg"
               alt=""
             />
             <h2>PHOTO</h2>
             <p>
               {translation === 'spanish'
-                ? 'Ofrezco 3 opciones de paquetes con diferencias en la cantidad de horas de cobertura y cantidad de fotos.'
-                : 'I offer 3 package options with differences in the amount of coverage hours and quantity of photos.'}
+                ? 'Ofrezco 3 opciones de paquetes con diferencias en la cantidad de horas de cobertura, la cantidad de fotógrafos y la cantidad de fotos.'
+                : 'I offer 3 package options with differences in quantity of hours of coverage, the number of photographers and the number of photos.'}
             </p>
           </Link>
         </div>

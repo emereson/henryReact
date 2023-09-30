@@ -75,13 +75,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2vw;
+  gap: 1vw;
   padding-left: 2.5vw;
   animation: slideIn 2s forwards;
 }
 .aboutme__paragraph p {
   font-family: 'Manrope', sans-seri;
-  font-size: 1.38vw;
+  font-size: 1.25vw;
   color: var(--body-white);
   font-weight: 100;
   line-height: 1.9vw;
@@ -105,6 +105,7 @@
 }
 .aboutme__sectionTwo h3 {
   width: 65%;
+  bottom: 10%;
   position: absolute;
   color: var(--body-white);
   text-align: center;

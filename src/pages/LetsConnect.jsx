@@ -194,18 +194,18 @@ const LetsConnect = ({ translation }) => {
             <p>
               {translation === 'spanish'
                 ? `Gracias por estar interesadp en mi.`
-                : `Thank you for being interested in me.`}
+                : `Thank you for being interested in working with me.`}
             </p>
             <p>
               {translation === 'spanish'
-                ? `sera un honor capturar tus mejores momentos.`
-                : `it will be an honor to capture your best moments.`}
+                ? `será un honor capturar tus mejores momentos.`
+                : `It will be an honor to capture your best moments.`}
             </p>
             <p>
               {translation === 'spanish'
-                ? `si quieres obtener todos lo detalles. rellena el formulario`
+                ? `si quieres obtener todos los detalles, rellena el formulario`
                 : `
-            if you want to get all the details. complete the form`}
+                If you want to get all the details, fill out the form`}
             </p>
             <p>
               {translation === 'spanish'
@@ -317,7 +317,7 @@ const LetsConnect = ({ translation }) => {
                 }
               >
                 {translation === 'spanish'
-                  ? '¿En que estas interesado?'
+                  ? '¿En qué esta interesado?'
                   : `What are you interested in?
           `}
               </label>
@@ -341,7 +341,7 @@ const LetsConnect = ({ translation }) => {
                 }
               >
                 {translation === 'spanish'
-                  ? 'Lugar del evento'
+                  ? 'Lugar del Evento'
                   : 'Place of the event'}
               </label>
 
@@ -360,17 +360,18 @@ const LetsConnect = ({ translation }) => {
                 style={
                   label7 === 'date'
                     ? { transform: 'translateY(10%)' }
-                    : { transform: 'translateY(170%)' }
+                    : { transform: 'translateY(10%)' }
                 }
               >
                 {translation === 'spanish'
-                  ? 'Fecha del evento'
-                  : 'Event date'}
+                  ? 'Fecha del Evento'
+                  : 'Event Date'}
               </label>
               <input
                 type="text"
                 name="date"
                 id="date"
+                defaultValue="23/09/2023"
                 onChange={handleInputChange7}
                 required
               />
@@ -386,8 +387,8 @@ const LetsConnect = ({ translation }) => {
                 }
               >
                 {translation === 'spanish'
-                  ? 'Como me has conocido'
-                  : 'How did you know me'}
+                  ? 'Cómo me has conocido'
+                  : 'How did you hear about me'}
               </label>
               <input
                 type="text"
@@ -404,8 +405,8 @@ const LetsConnect = ({ translation }) => {
               cols="50"
               placeholder={
                 translation === 'spanish'
-                  ? 'Cuéntame un poco más sobre ustedes como pareja y cuál es su visión para su boda, me encantaría que me lo contaran. (Si la fecha de la boda no está decidida, da una idea de lo que estabas pensando aquí)'
-                  : 'Tell me a bit more about you as a couple and what is your vision for your wedding, I would love to hear from you. (If the wedding date is not decided, give an idea of ​​what you were thinking here)'
+                  ? 'Cuéntame un poco más sobre ustedes como pareja y cuál es su visión para su boda, me encantaría que me lo contaran. (Si la fecha de la boda no está decidida, da una idea de lo que estabas pensando aquí.)'
+                  : 'Tell me a little more about you all as a couple and what your vision is for your wedding,  I would love to know. (If the wedding date is not decided, just write in a date around the time you are considering.)  '
               }
               required
             />
@@ -414,7 +415,7 @@ const LetsConnect = ({ translation }) => {
               type="submit"
               value="Enviar"
             >
-              Enviar
+              {translation === 'spanish' ? 'ENVIAR' : 'SEND'}
             </button>
           </form>
           <ClickTop />

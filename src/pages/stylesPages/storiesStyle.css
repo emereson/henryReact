@@ -212,8 +212,13 @@
   font-size: 6vw;
   font-weight: 400;
   letter-spacing: 1.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.LogoStories__contianer img {
+  width: 90%;
+}
 @media (max-width: 600px) {
   .stories__start {
     height: 150vh;

@@ -66,6 +66,7 @@
   gap: 2vw;
   opacity: 0;
   transform: translateY(50%);
+  font-family: 'Manrope', sans-seri;
 }
 
 .letsConnec__form div {
@@ -75,7 +76,7 @@
 }
 .letsConnec__form label {
   position: absolute;
-  font-size: 1vw;
+  font-size: 1.1vw;
   color: var(--body-white);
   font-weight: 400;
   transition: 1s;
@@ -101,12 +102,13 @@
   border: none;
   color: var(--body-white);
   text-align: start;
-  font-size: 1vw;
+  font-size: 1.1vw;
   font-weight: 400;
   margin-top: 2vw;
   padding-bottom: 1vw;
   border-bottom: 0.06vw solid var(--body-gray);
   z-index: 6;
+  font-family: 'Manrope', sans-seri;
 }
 
 .letsConnec__form textarea::placeholder {

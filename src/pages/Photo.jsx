@@ -73,16 +73,12 @@ const Photo = ({ translation }) => {
     <>
       {!loading ? (
         <div className="loading">
-          <img
-            className="loading__img "
-            src="./grupo3.jpg"
-            alt="Photo"
-          />
+          <img className="loading__img " src="./10.jpg" alt="Photo" />
         </div>
       ) : (
         <div className="films__container">
           <section className="films__section">
-            <img src="./grupo3.jpg" alt="Photo" />
+            <img src="./10.jpg" alt="Photo" />
             <h1>PHOTO</h1>
             <Link
               className="films__link"
@@ -102,8 +98,8 @@ const Photo = ({ translation }) => {
                 <h2>PHOTO 1</h2>
                 <p>
                   {translation === 'spanish'
-                    ? 'Para parejas que les encantan las fotos, llenas de emoción y emotividad, en las que te reirás y llorarás, ideal para bodas largas, de las que no quieres perderte ningún detalle.'
-                    : "For couples who love photos, full of excitement and emotion, where you'll laugh and cry, ideal for long weddings, ones you don't want to miss any detail of."}
+                    ? 'Para parejas amantes de las fotos, este paquete está compuesto por un lote de imágenes editadas una a una, apreciando la belleza en cada detalle del gran día.'
+                    : 'For couples who love photos, this package is made up of a batch of images edited one by one, appreciating the beauty in every detail of the big day.'}
                 </p>
                 <p>
                   {translation === 'spanish'
@@ -119,8 +115,8 @@ const Photo = ({ translation }) => {
                 <h2>PHOTO 2</h2>
                 <p>
                   {translation === 'spanish'
-                    ? 'Ideal para parejas que les encanta una boda tranquila pero dinámica, resumiendo los mejores momentos de su boda en más de 13 minutos, en los que te llevaré por un viaje del que no querrás que se acabe.'
-                    : "Ideal for couples who love a calm yet dynamic wedding, summarizing the best moments of their wedding in over 13 minutes, taking you on a journey you won't want to end."}
+                    ? 'Pensado para aquellos que les fascina las fotos pero que su boda no es tan larga. Resumiré los mejores momentos de su boda en fotos inolvidables.'
+                    : 'Designed for those who are fascinated by photos but whose wedding is not that long. I will summarize the best moments of your wedding in unforgettable photos.'}
                 </p>
                 <p>
                   {translation === 'spanish'
@@ -136,13 +132,13 @@ const Photo = ({ translation }) => {
                 <h2>PHOTO 3</h2>
                 <p>
                   {translation === 'spanish'
-                    ? 'Momentos fugaces, boda emotiva, lágrimas y risas, miles de cosas pasando, todo esto, resumido en un film de 6 a 8 minutos.'
-                    : 'Fleeting moments, emotional wedding, tears and laughter, thousands of things happening, all of this, summarized in a film of 6 to 8 minutes.'}
+                    ? 'Este paquete de fotos está diseñado para una boda pequeña, al lado de tus seres queridos y personas super importantes en tu vida.'
+                    : 'This photo package is designed for a small wedding, with your loved ones and those important people in your life.'}
                 </p>
                 <p>
                   {translation === 'spanish'
-                    ? '2 fotógrafos, cobertura de hasta 8 horas. 300 a 500 fotos.'
-                    : '2 photographers, coverage of up to 8 hours. 300 to 500 photos.'}
+                    ? '1 fotógrafo, cobertura de hasta 8 horas. 300 a 500 fotos.'
+                    : '1 photographer, coverage of up to 8 hours. 300 to 500 photos.'}
                 </p>
               </li>
             </ul>
@@ -152,8 +148,8 @@ const Photo = ({ translation }) => {
               }`}
             >
               {translation === 'spanish'
-                ? 'Una vez que termine su boda y mires sus fotos, verás lo hermoso que fue el día, cuánto amor compartiste y lo alegre que fue.'
-                : 'Once your wedding is over and you look at your photos, you will see how beautiful the day was, how much love you shared, and how joyful it was.'}
+                ? 'Una vez que termine su boda y mire sus fotos, verás lo hermoso que fue el día, cuanto amor compartiste y lo alegre que fue.'
+                : 'Once your wedding day is over and you look at your photos, you will see how beautiful the day was, how much love you shared, and how joyful it all was.'}
             </h4>
           </section>
           <ClickTop />

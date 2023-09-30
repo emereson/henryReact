@@ -205,7 +205,9 @@ const Stories = () => {
           viewSection3 ? 'viewAnimation' : ''
         }`}
       >
-        <Link to="/about">HENRY GIL</Link>
+        <Link to="/about">
+          <img src="./logoHenry.PNG" alt="LOGO OFICIAL HENRY " />
+        </Link>
       </section>
       <ClickTop />
     </div>

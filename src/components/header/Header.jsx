@@ -97,7 +97,7 @@ const Header = () => {
             viewIcon={viewIcon}
             onMouseOver={() =>
               handleMouseOver(
-                translation === 'spanish' ? 'MENU' : 'HOME'
+                translation === 'spanish' ? 'HISTORIAS' : 'STORIES'
               )
             }
             onMouseOut={handleMouseOut}
@@ -178,7 +178,7 @@ const Header = () => {
         title="Henry Gil - Home"
         className="header__connect"
       >
-        {translation === 'spanish' ? 'CONÉCTAME' : "LET'S CONNECT"}
+        {translation === 'spanish' ? 'CONTACTAME' : 'CONTACT ME'}
       </Link>
     </header>
   );

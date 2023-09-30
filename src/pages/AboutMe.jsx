@@ -82,70 +82,85 @@ const AboutMe = ({ translation }) => {
                 {translation === 'spanish' ? 'SOBRE MI' : 'ABOUT ME'}
               </h1>
               <div className="aboutme__biography">
-                <img src="./MAT07468.jpg" alt="Coffee" />
+                <img src="./002.jpg" alt="Coffee" />
                 <div className="aboutme__paragraph">
                   <p>
                     {translation === 'spanish' ? (
                       <>
-                        Mi nombre es Henry, tengo 23 años. Soy
-                        guatemalteco y me fascina el café. Me dedico a
-                        fotografiar y documentar videos de boda. Busco
-                        realizar un relato documental auténtico y
-                        cinematográfico de la pareja, de las personas
-                        y situaciones que los rodean. Valoro la
-                        autenticidad y creo que los mejores videos
-                        provienen simplemente de ser uno mismo.
+                        Hola, soy Henry, un guatemalteco de 23 años
+                        que le encanta trabajar con personas
+                        increíbles. Me dedico a fotografiar y
+                        documentar videos de boda. Soy alguien muy
+                        pasional, inquieto y nervioso, esa inquietud
+                        fue lo que me llevó a comprar una cámara a los
+                        19 años. No tardé en darme cuenta de que
+                        quería dedicarle todo mi tiempo, esa cámara me
+                        trajo hasta aquí y por si fuera poco, descubrí
+                        que trabajar puede ser algo muy emocionante.
                       </>
                     ) : (
                       <>
-                        My name is Henry, and I'm 23 years old. I'm
-                        Guatemalan, and I'm passionate about coffee. I
-                        specialize in photographing and documenting
-                        wedding videos. I aim to create an authentic
-                        and cinematic documentary narrative of the
-                        couple, the people, and the situations
-                        surrounding them. I value authenticity and
-                        believe that the best videos come from simply
-                        being oneself.
-                      </>
-                    )}
-                  </p>
-                  <p>
-                    {translation === 'spanish' ? (
-                      <>
-                        Soy muy inquieto y esa inquietud fue lo que me
-                        llevó a comprar una cámara a los 19 años. No
-                        tardé en darme cuenta de que quería dedicarle
-                        todo mi tiempo. Cada vez que grabo a alguien,
-                        lo tomo como una oportunidad para escuchar,
-                        preguntar y aprender. En eso se basa mi
-                        búsqueda audiovisual: capturar la esencia y el
-                        mensaje que las personas me regalan.
-                      </>
-                    ) : (
-                      <>
-                        I'm very curious by nature, and it was this
-                        curiosity that led me to buy a camera at the
-                        age of 19. It didn't take long for me to
+                        Hi, I'm Henry, a 23-year-old Guatemalan who
+                        loves working with amazing people. I dedicate
+                        myself to photographing weddings and
+                        documenting wedding videos. I am someone very
+                        passionate, restless and nervous, that
+                        restlessness was what led me to buy a camera
+                        at 19 years old. It didn't take me long to
                         realize that I wanted to dedicate all my time
-                        to it. Every time I record someone, I see it
-                        as an opportunity to listen, ask questions,
-                        and learn. That's the foundation of my
-                        audiovisual journey: capturing the essence and
-                        message that people share with me.
+                        to that passion of mine. That camera brought
+                        me to where I am now. I also discovered that
+                        working can be something very exciting.
                       </>
                     )}
                   </p>
                   <p>
                     {translation === 'spanish' ? (
                       <>
-                        Estoy muy contento de trabajar en lo que me
-                        apasiona. Tengo la suerte de poder hacerlo.
+                        Mi búsqueda audiovisual se basa en capturar la
+                        esencia y el mensaje que las personas me
+                        regalan, busco realizar un relato documental
+                        auténtico y cinematográfico de la pareja, de
+                        las personas y situaciones que los rodean.
+                        Valoro la autenticidad y creo que las mejores
+                        fotos o videos provienen simplemente de ser
+                        uno mismo.
                       </>
                     ) : (
                       <>
-                        I'm thrilled to work in what I'm passionate
-                        about. I'm fortunate to be able to do so.
+                        My audiovisual search is based on capturing
+                        the essence and message that people want to
+                        give to the world. I seek to make an authentic
+                        and cinematographic documentary style story of
+                        the couple, and the people and situations that
+                        surround them. I value authenticity and
+                        believe that the best photos or videos come
+                        from simply being yourself.
+                      </>
+                    )}
+                  </p>
+                  <p>
+                    {translation === 'spanish' ? (
+                      <>
+                        Sabía que encontraría lugares llenos de
+                        personas felices, emocionadas y con ganas de
+                        compartir la vida. Por eso decidí entrar a
+                        este mundo, estoy muy contento de poder
+                        dedicarme a lo que me apasiona.
+                        <br />
+                        Dedicarme a esto fue una de las mejores
+                        decisiones que he tomado.
+                      </>
+                    ) : (
+                      <>
+                        I knew I would find places full of happy,
+                        excited people wanting to share the joy of
+                        life. That's why I decided to enter this world
+                        of photography. I am very happy to be able to
+                        dedicate myself to what I am passionate about.
+                        <br />
+                        Dedicating myself to this was one of the best
+                        decisions I have ever made.
                       </>
                     )}
                   </p>

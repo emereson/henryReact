@@ -9,8 +9,7 @@ const LoadingPage = ({ viewloading }) => {
       }`}
     >
       <span></span>
-      <h1 className="loadingPage__title">HENRY GIL</h1>
-      <div className="loadingPage__div"></div>
+      <img src="./logoHenry.PNG" alt="LOGO OFICIAL HENRY " />
     </div>
   );
 };
