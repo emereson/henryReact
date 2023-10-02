@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useRef, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import './stylesPages/videoInformationStyle.css';
 import ReactPlayer from 'react-player';
 import CardVideoInformation from '../components/VideoInformation/CardVideoInformation';
@@ -51,6 +51,10 @@ const VideoInformation = () => {
 
   return (
     <article className="video-information-container">
+      <Link to="/stories" className="cardVideosStories__close">
+        x
+      </Link>
+
       <div
         className={`videoInformation__loading ${
           viewloading ? 'videoInformation__loading-exit' : ''

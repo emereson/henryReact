@@ -63,6 +63,16 @@
   z-index: 4;
   cursor: pointer;
 }
+.cardVideosStories__close {
+  position: absolute;
+  color: white;
+  z-index: 10;
+  top: 5vw;
+  right: 3vw;
+  font-size: 4vw;
+  font-family: 'Manrope', sans-seri;
+  cursor: pointer;
+}
 
 /* card Videos Stories data Video Container */
 .cardVideosStories__dataContainer {

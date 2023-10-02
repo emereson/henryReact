@@ -103,6 +103,7 @@ const CardVideosStories = ({ videoStorie, index }) => {
           ? videoStorie.title
           : videoStorie.titleEng}
       </h3>
+
       <ReactPlayer
         className="cardVideosStories__video"
         playing={playVideo}
