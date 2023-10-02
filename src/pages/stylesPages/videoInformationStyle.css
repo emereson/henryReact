@@ -86,7 +86,7 @@
   transition: all 2s;
   cursor: none;
 }
-.videoInformation-video h4 {
+.videoInformation-video h3 {
   position: absolute;
   margin-top: 9vw;
   color: var(--text-color-white);

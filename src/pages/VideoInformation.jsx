@@ -85,7 +85,7 @@ const VideoInformation = () => {
             ? videoInformation?.title
             : videoInformation?.titleEng}
         </h2>
-        <h4
+        <h3
           style={
             playVideo
               ? { opacity: '0', zIndex: '3' }
@@ -96,7 +96,7 @@ const VideoInformation = () => {
           {translation === 'spanish'
             ? videoInformation?.date
             : videoInformation?.dateEng}
-        </h4>
+        </h3>
         <span
           onClick={() => {
             setPlayVideo(true);
