@@ -41,10 +41,12 @@ const ClickTop = () => {
           YOUTUBE
         </a>
       </nav>
-      <i
-        className="bx bx-up-arrow-alt arrow__top"
+      <img
+        className="arrow__top"
+        src="./flecha.png"
+        alt="flecha top"
         onClick={clickTop}
-      ></i>
+      />
     </section>
   );
 };

@@ -30,7 +30,7 @@
   font-family: 'Manrope', sans-seri;
   justify-content: center;
   padding: 0 4svw 2vw 4vw;
-  z-index: 5;
+  z-index: 10;
   align-items: center;
 }
 
@@ -46,16 +46,13 @@
   z-index: 10;
   cursor: pointer;
 }
-.clicktop__nav i {
-  font-size: 1.9vw;
-  margin-left: -1vw;
-}
 
 .arrow__top {
   position: absolute;
   z-index: 5;
-  top: 30%;
-  right: 3%;
+  top: 10%;
+  right: 5%;
+  width: 1.5vw;
   color: var(--text-color-white);
   display: flex;
   justify-content: center;

@@ -193,13 +193,13 @@ const LetsConnect = ({ translation }) => {
           >
             <p>
               {translation === 'spanish'
-                ? `Gracias por estar interesadp en mi.`
-                : `Thank you for being interested in working with me.`}
+                ? `Gracias por estar interesado en mi,`
+                : `Thank you for being interested in working with me,`}
             </p>
             <p>
               {translation === 'spanish'
-                ? `será un honor capturar tus mejores momentos.`
-                : `It will be an honor to capture your best moments.`}
+                ? `será un honor capturar tus mejores momentos,`
+                : `It will be an honor to capture your best moments,`}
             </p>
             <p>
               {translation === 'spanish'
@@ -209,7 +209,7 @@ const LetsConnect = ({ translation }) => {
             </p>
             <p>
               {translation === 'spanish'
-                ? `y me pondre en contacto contigo`
+                ? `y me pondré en contacto contigo.`
                 : `and I will contact you.`}
             </p>
           </section>
@@ -295,7 +295,7 @@ const LetsConnect = ({ translation }) => {
                 }
               >
                 {translation === 'spanish'
-                  ? 'Redes Sociales:IG, FB, Tiktok'
+                  ? 'Redes Sociales: IG, FB, Tiktok'
                   : 'Social Networks: IG, FB, Tiktok'}
               </label>
 
@@ -317,8 +317,8 @@ const LetsConnect = ({ translation }) => {
                 }
               >
                 {translation === 'spanish'
-                  ? '¿En qué esta interesado?'
-                  : `What are you interested in?
+                  ? '¿En qué está interesado?'
+                  : `What package are you interested in?
           `}
               </label>
 
@@ -387,8 +387,8 @@ const LetsConnect = ({ translation }) => {
                 }
               >
                 {translation === 'spanish'
-                  ? 'Cómo me has conocido'
-                  : 'How did you hear about me'}
+                  ? '¿Cómo me has conocido?'
+                  : 'How did you hear about me?'}
               </label>
               <input
                 type="text"
@@ -405,7 +405,7 @@ const LetsConnect = ({ translation }) => {
               cols="50"
               placeholder={
                 translation === 'spanish'
-                  ? 'Cuéntame un poco más sobre ustedes como pareja y cuál es su visión para su boda, me encantaría que me lo contaran. (Si la fecha de la boda no está decidida, da una idea de lo que estabas pensando aquí.)'
+                  ? 'Cuénteme un poco más sobre ustedes como pareja y cuál es su visión para su boda, me encantaría que me lo contaran. (Si la fecha de la boda no está decidida, dé una idea de cuándo estaba pensando aquí)'
                   : 'Tell me a little more about you all as a couple and what your vision is for your wedding,  I would love to know. (If the wedding date is not decided, just write in a date around the time you are considering.)  '
               }
               required

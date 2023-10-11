@@ -70,6 +70,17 @@ const CardVideosStories = ({ videoStorie, index }) => {
     navigate(`/videoInformation/${videoStorie.id}`);
   };
 
+  const filterCategory = () => {
+    const filteredVideos = videoStorie.dataVideos.filter(
+      (dataVideo) =>
+        dataVideo.title === 'CATEGORÍA' ||
+        dataVideo.title === 'CATEGORY'
+    );
+    return filteredVideos;
+  };
+
+  const filteredVideos = filterCategory();
+
   return (
     <div
       className="cardVideosStories__container"
@@ -124,28 +135,13 @@ const CardVideosStories = ({ videoStorie, index }) => {
         loading="lazy"
       />
       <div className="cardVideosStories__dataContainer">
-        {videoStorie.dataVideos.map((dataVideo, idx) => (
-          <section
-            key={dataVideo.id}
-            style={
-              idx === sliderDataVideo
-                ? { transform: 'translateY(0)', opacity: '1' }
-                : { transform: 'translateY(100%)', opacity: '0' }
-            }
-          >
-            {dataVideo.link ? (
-              <a href={dataVideo.link}>
-                {translation === 'spanish'
-                  ? dataVideo.description
-                  : dataVideo.descriptionEng}
-              </a>
-            ) : (
-              <p>
-                {translation === 'spanish'
-                  ? dataVideo.description
-                  : dataVideo.descriptionEng}
-              </p>
-            )}
+        {filteredVideos.map((dataVideo) => (
+          <section key={dataVideo.id}>
+            <p>
+              {translation === 'spanish'
+                ? dataVideo.description
+                : dataVideo.descriptionEng}
+            </p>
           </section>
         ))}
       </div>

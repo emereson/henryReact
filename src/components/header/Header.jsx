@@ -168,7 +168,7 @@ const Header = () => {
                 ES
               </button>
             </div>
-            henrygilweddings.com
+            hello@henrygilweddings.com
           </div>
         </section>
       </nav>
@@ -178,7 +178,7 @@ const Header = () => {
         title="Henry Gil - Home"
         className="header__connect"
       >
-        {translation === 'spanish' ? 'CONTACTAME' : 'CONTACT ME'}
+        {translation === 'spanish' ? 'CONTACTAME' : 'LET’S CONECT'}
       </Link>
     </header>
   );

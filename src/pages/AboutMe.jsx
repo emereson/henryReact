@@ -75,6 +75,7 @@ const AboutMe = ({ translation }) => {
         </div>
       ) : (
         <div className="aboutme__container">
+          <div className="film-effect"></div>
           <section className="aboutme__section">
             <img src="./Yomero.jpg" alt="Henry's Profile" />
             <div className="aboutme__content">
@@ -147,9 +148,6 @@ const AboutMe = ({ translation }) => {
                         compartir la vida. Por eso decidí entrar a
                         este mundo, estoy muy contento de poder
                         dedicarme a lo que me apasiona.
-                        <br />
-                        Dedicarme a esto fue una de las mejores
-                        decisiones que he tomado.
                       </>
                     ) : (
                       <>
@@ -158,9 +156,6 @@ const AboutMe = ({ translation }) => {
                         life. That's why I decided to enter this world
                         of photography. I am very happy to be able to
                         dedicate myself to what I am passionate about.
-                        <br />
-                        Dedicating myself to this was one of the best
-                        decisions I have ever made.
                       </>
                     )}
                   </p>
@@ -177,7 +172,7 @@ const AboutMe = ({ translation }) => {
             <h3>
               {translation === 'spanish'
                 ? 'Dedicarme a esto fue una de las mejores decisiones que he tomado.'
-                : 'The decision to dedicate myself to this was one of the best decisions I have made.'}
+                : '     Dedicating myself to this was one of the best decisions I have ever made.'}
             </h3>
           </section>
           <section

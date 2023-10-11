@@ -43,7 +43,7 @@
 
 .info__container h2 {
   position: absolute;
-  margin-top: -15vw;
+  margin-top: -8vw;
   color: rgb(215, 178, 143);
   font-size: 8vw;
   font-weight: 400;
@@ -56,7 +56,7 @@
   font-size: 1.2vw;
   font-family: 'Manrope', sans-seri;
   text-align: center;
-  margin-top: 0vw;
+  margin-top: 7vw;
   animation: slideIn 1.5s forwards;
 }
 

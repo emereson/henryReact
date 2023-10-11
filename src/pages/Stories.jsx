@@ -186,13 +186,16 @@ const Stories = () => {
           viewSection2 ? 'viewAnimation' : ''
         }`}
       >
+        <div className="film-effect"></div>
         <h4>
-          {translation === 'spanish' ? 'CONOZCAMONOS' : `LET'S MEET`}
+          {translation === 'spanish'
+            ? 'CONOZCAMONOS'
+            : `LET'S GET TO KNOW EACH OTHER`}
         </h4>
         <p>
           {translation === 'spanish'
             ? `Cada pareja y su entorno, preferencias personales y compromisos hacen que cada boda sea incomparable`
-            : `Each couple and their environment, personal preferences and commitment make each wedding an unparalleled project`}
+            : `Each couple has different environments, personal preferences and commitments and that makes every wedding incomparable`}
         </p>
         <img src="/letsMeet.png" alt="Let's Meet" />
 

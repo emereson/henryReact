@@ -97,6 +97,7 @@ const Services = ({ translation }) => {
         </div>
       ) : (
         <div className="services__container">
+          <div className="film-effect"></div>
           <section className="services__section">
             <img src="./IMG_5312.png" alt="services" />
             <h1>
@@ -121,22 +122,22 @@ const Services = ({ translation }) => {
                 <li>
                   <h3>
                     {translation === 'spanish'
-                      ? 'Albunes de boda'
-                      : 'Wedding Albums'}
+                      ? 'Libro de Fotos'
+                      : 'Photo Book'}
                   </h3>
                   <p>
                     {translation === 'spanish' ? (
                       <>
-                        El álbum de fotografías de bodas es un clásico
+                        El libro de fotos de la boda es un clásico
                         recuerdo que no puede faltar para viajar en el
-                        tiempo.
+                        tiempo
                         <br />
                         Es un recuerdo tangible que puedes guardar
                         como un archivo y registro de tu vida.
                       </>
                     ) : (
                       <>
-                        The wedding photo album is a classic souvenir
+                        The wedding photo book is a classic souvenir
                         that is essential to be able to travel back in
                         time.
                         <br />
@@ -187,7 +188,7 @@ const Services = ({ translation }) => {
                 <li>
                   <h3>
                     {translation === 'spanish'
-                      ? 'Cobertura de dias completos'
+                      ? 'Cobertura de días completos'
                       : 'Full days coverage'}
                   </h3>
                   <p>
