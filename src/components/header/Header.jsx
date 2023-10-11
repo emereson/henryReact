@@ -178,7 +178,7 @@ const Header = () => {
         title="Henry Gil - Home"
         className="header__connect"
       >
-        {translation === 'spanish' ? 'CONTACTAME' : 'LET’S CONECT'}
+        {translation === 'spanish' ? 'CONTACTAME' : 'LET’S CONNECT'}
       </Link>
     </header>
   );
