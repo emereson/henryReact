@@ -222,22 +222,27 @@
 }
 @media (max-width: 600px) {
   .stories__start {
-    height: 150vh;
+    height: 100vh;
   }
   .storieSlice__container {
     width: 75%;
-    height: 70vw;
+    height: 60vw;
     bottom: 15vw;
   }
   .storiesStart__h2 {
+    padding-top: 40vw;
+    height: auto;
     line-height: 8.5vw;
   }
   .storieSlice__title {
-    font-size: 5.5vw;
+    font-size: 4.5vw;
   }
   .storieSlice__description {
-    font-size: 3vw;
-    text-align: center;
+    text-align: start;
+    font-size: 3.2vw;
+  }
+  .storieSlice__counter {
+    bottom: 5vw;
   }
   .storieSlice__counter span {
     width: 2vw;

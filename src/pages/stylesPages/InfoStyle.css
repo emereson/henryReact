@@ -71,13 +71,14 @@
     flex-direction: column;
   }
   .info__container h2 {
-    font-size: 20vw;
+    font-size: 15vw;
     position: relative;
   }
   .info__container p {
     width: 80%;
+    text-align: start;
     position: relative;
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
   .info__container img {
     position: absolute;

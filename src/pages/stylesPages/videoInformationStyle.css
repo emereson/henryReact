@@ -168,30 +168,9 @@
     margin-top: 14vw;
     font-size: 4vw;
   }
-  .video-information-time {
-    width: 20%;
-  }
-  .video-current-time {
-    font-size: 3.5vw;
-  }
-  .video-duration-time {
-    font-size: 3.5vw;
-  }
-  .video-information-progress {
-    width: 50%;
-  }
-  .custom-progress {
-    height: 3vw;
-  }
-  .bxs-volume-full {
-    font-size: 6vw;
-  }
-  .volumen__progress {
-    top: -11vw;
-    height: 2vw;
-  }
-  .bx-fullscreen {
-    font-size: 6vw;
+  .cardVideosStories__close {
+    top: 10vw !important;
+    font-size: 10vw !important;
   }
   .cardVideoInformation-section {
     gap: 1vw;

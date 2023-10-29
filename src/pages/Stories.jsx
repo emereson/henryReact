@@ -8,6 +8,7 @@ import PhotographsStories from '../components/stories/PhotographsStories';
 import { useSelector } from 'react-redux';
 import ClickTop from '../components/ClickTop';
 import { Link } from 'react-router-dom';
+import BlogStories from '../components/stories/BlogStories';
 
 const Stories = () => {
   const [storiesSlices, setStoriesSlices] = useState();
@@ -180,6 +181,9 @@ const Stories = () => {
       )}
       {(selectNav === 'photographs' || selectNav === 'all') && (
         <PhotographsStories selectNav={selectNav} />
+      )}
+      {(selectNav === 'blog' || selectNav === 'all') && (
+        <BlogStories selectNav={selectNav} />
       )}
       <section
         className={`letsMeetStories__container ${

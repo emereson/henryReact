@@ -11,22 +11,26 @@ const NavStories = ({ setSelectNav, selectNav, translation }) => {
           {translation === 'spanish' ? 'TODO' : 'ALL'}
         </li>
         <li
-          className={selectNav === 'videos' ? 'navStories__active' : ''}
+          className={
+            selectNav === 'videos' ? 'navStories__active' : ''
+          }
           onClick={() => setSelectNav('videos')}
         >
           {translation === 'spanish' ? 'VIDEOS' : 'VIDEOS'}
         </li>
         <li
-          className={selectNav === 'photographs' ? 'navStories__active' : ''}
+          className={
+            selectNav === 'photographs' ? 'navStories__active' : ''
+          }
           onClick={() => setSelectNav('photographs')}
         >
           {translation === 'spanish' ? 'FOTOGRAFIA' : 'PHOTOGRAPHY'}
         </li>
         <li
-          className={selectNav === 'collaborations' ? 'navStories__active' : ''}
-          onClick={() => setSelectNav('collaborations')}
+          className={selectNav === 'blog' ? 'navStories__active' : ''}
+          onClick={() => setSelectNav('blog')}
         >
-          {translation === 'spanish' ? 'COLABORACIONES' : 'COLLABORATIONS'}
+          {translation === 'spanish' ? 'BLOG' : 'BLOG'}
         </li>
       </ul>
     </nav>

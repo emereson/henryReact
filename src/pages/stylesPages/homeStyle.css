@@ -114,9 +114,28 @@
   background-color: #5c5443;
 }
 @media (max-width: 660px) {
+  .home__nav {
+    position: absolute;
+    bottom: 2.5vw;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .home__ul {
-    font-size: 3.5vw;
+    position: relative !important;
+    bottom: auto;
+    right: auto;
+    margin: auto;
+    font-size: 4vw;
     padding-bottom: 3vw;
+  }
+
+  .translation__container {
+    bottom: 12vw;
+    left: 35%;
+    right: auto;
   }
   .translation__container button {
     width: 15vw;

@@ -197,6 +197,7 @@
   .header__logo {
     font-size: 3.5vw;
   }
+
   .header__connect {
     font-size: 3.5vw;
     text-align: center;
@@ -205,15 +206,14 @@
     width: 5vw;
     gap: 0.6vw;
   }
+
   .headerMenu__icon span {
     height: 0.5vw;
   }
   .headerMenu__close {
     font-size: 5vw;
   }
-  .header__menu-correo {
-    font-size: 3.5vw;
-  }
+
   .header__menu-buttons {
     position: relative !important;
     left: -10vw !important;
@@ -224,5 +224,22 @@
     margin: 0 !important;
     border: none !important;
     padding: 0 2vw 0 2vw;
+  }
+  .header__link {
+    height: 15%;
+  }
+  .header__menu a {
+    font-size: 10vw;
+  }
+  .header__menu-correo {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    font-size: 3.5vw;
+  }
+  .header__menu-buttons {
+    position: relative !important;
+    left: 0vw !important;
+    margin-top: -5vw;
   }
 }

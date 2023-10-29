@@ -164,15 +164,39 @@
 }
 
 @media (max-width: 660px) {
+  .services__section h1 {
+    text-align: center;
+    width: 50%;
+    font-size: 10vw;
+  }
+  .services__sectionTwo {
+    height: auto;
+    flex-wrap: nowrap;
+    padding: 10vw 0 10vw 0;
+    align-items: end;
+  }
+  .services__sectionTwo img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+  }
   .services__sectionTwo-text h2 {
-    font-size: 7vw;
+    font-size: 6vw;
     line-height: 7vw;
   }
   .services__sectionTwo-text h3 {
-    font-size: 5vw;
+    font-size: 4.5vw;
+  }
+  .services__sectionTwo-text ul {
+    width: 90%;
   }
   .services__sectionTwo-text p {
-    font-size: 3.3vw;
+    width: 100%;
+    font-size: 3vw;
+    font-weight: 200;
+  }
+  .services__img {
+    height: auto;
   }
   .services__sectionThree {
     flex-direction: column;
