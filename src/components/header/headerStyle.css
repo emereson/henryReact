@@ -21,6 +21,7 @@
   opacity: 0.05;
   background-image: url('/effectold.gif');
 }
+
 .header__logo {
   position: absolute;
   left: 3vw;
@@ -90,13 +91,16 @@
   0% {
     transform: translateY(0);
   }
+
   35% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-100%);
   }
 }
+
 .header__menu--active {
   transform: translateY(0);
   transition: 2s;
@@ -107,9 +111,11 @@
   0% {
     transform: translateY(-100%);
   }
+
   35% {
     transform: translateY(-100%);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -127,10 +133,12 @@
 
   transition: 0.8s;
 }
+
 .header__link:hover {
   background-color: var(--text-color-gold);
   transition: 0.8s;
 }
+
 .header__menu a {
   font-size: 7vw;
   display: flex;
@@ -141,6 +149,7 @@
   cursor: pointer;
   padding-left: 6vw;
 }
+
 .header__menu i {
   position: relative;
   right: auto;
@@ -177,6 +186,10 @@
   z-index: 12;
 }
 
+.header__menu-correo a {
+  font-size: 1.2vw;
+}
+
 .header__menu-buttons {
   position: relative;
   top: 2.5vw !important;
@@ -185,6 +198,7 @@
   right: 1vw !important;
   border: none !important;
 }
+
 .header__menu-buttons button {
   font-size: 1.2vw !important;
 }
@@ -194,6 +208,7 @@
     height: 15vw;
     gap: 10%;
   }
+
   .header__logo {
     font-size: 3.5vw;
   }
@@ -202,6 +217,7 @@
     font-size: 3.5vw;
     text-align: center;
   }
+
   .headerMenu__icon {
     width: 5vw;
     gap: 0.6vw;
@@ -210,6 +226,7 @@
   .headerMenu__icon span {
     height: 0.5vw;
   }
+
   .headerMenu__close {
     font-size: 5vw;
   }
@@ -219,24 +236,33 @@
     left: -10vw !important;
     margin-top: -5vw;
   }
+
   .header__menu-buttons button {
     font-size: 5vw !important;
     margin: 0 !important;
     border: none !important;
     padding: 0 2vw 0 2vw;
   }
+
   .header__link {
     height: 15%;
   }
+
   .header__menu a {
     font-size: 10vw;
   }
+
   .header__menu-correo {
     display: flex;
     flex-direction: column;
     gap: 3em;
     font-size: 3.5vw;
   }
+
+  .header__menu-correo a {
+    font-size: 3.5vw;
+  }
+
   .header__menu-buttons {
     position: relative !important;
     left: 0vw !important;

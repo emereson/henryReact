@@ -168,7 +168,9 @@ const Header = () => {
                 ES
               </button>
             </div>
-            hello@henrygilweddings.com
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzCMptTrjPCxpkrWwzWXdtPMnglnRLCtJMCrLdfSqlCrzNPZQTlLWSRhHfFLXhcPRSJpdWM">
+              hello@henrygilweddings.com
+            </a>
           </div>
         </section>
       </nav>
