@@ -57,8 +57,9 @@
     width: 78vw;
     height: 1vw;
   }
-}
 
-.loadingPage__container img {
-  width: 100%;
+  .loadingPage__container img {
+    width: 90% !important;
+  }
+
 }
