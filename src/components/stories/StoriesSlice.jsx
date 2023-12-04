@@ -1,4 +1,5 @@
 import React from 'react';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
 
 const StoriesSlice = ({
   storieSlice,
@@ -7,29 +8,20 @@ const StoriesSlice = ({
   translation,
 }) => {
   return (
-    <ul
-      className="storieSlice__ul"
-      style={
-        storiesTextSlices === index
-          ? { transform: 'translateX(0)' }
-          : storiesTextSlices > index
-          ? { transform: 'translateX(-100%)' }
-          : { transform: 'translateX(100%)' }
-      }
-    >
-      <li className="storieSlice__title">
+    <SplideSlide>
+      <div className="storieSlice__title">
         <p>{storieSlice.numberTitle}. </p>
         {translation === 'spanish'
           ? storieSlice.title
           : storieSlice.titleEng}
-      </li>
+      </div>
 
-      <li className="storieSlice__description">
+      <div className="storieSlice__description">
         {translation === 'spanish'
           ? storieSlice.description
           : storieSlice.descriptionEng}
-      </li>
-    </ul>
+      </div>
+    </SplideSlide>
   );
 };
 

@@ -5,16 +5,15 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background: linear-gradient(
-    90deg,
-    rgb(31, 22, 13),
-    rgb(52, 43, 38),
-    rgb(19, 17, 14),
-    rgb(31, 22, 13),
-    rgb(52, 43, 38)
-  );
+  background: linear-gradient(90deg,
+      rgb(31, 22, 13),
+      rgb(52, 43, 38),
+      rgb(19, 17, 14),
+      rgb(31, 22, 13),
+      rgb(52, 43, 38));
   overflow: hidden;
 }
+
 .stories__start {
   position: relative;
   width: 100%;
@@ -25,6 +24,7 @@
   justify-content: start;
   overflow: hidden;
 }
+
 .stories__start img {
   position: absolute;
   top: 0;
@@ -55,36 +55,29 @@
     transform: translateY(50%);
     opacity: 0;
   }
+
   to {
     transform: translateX(0);
     opacity: 1;
   }
 }
+
 .storieSlice__container {
   position: absolute;
-  bottom: 3vw;
-  height: 35vw;
-  width: 35vw;
+  bottom: 0vw;
+  height: auto;
+  width: 40vw;
   z-index: 5;
   color: var(--body-white);
   display: flex;
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  transform: translateY(50%);
+  opacity: 1;
 }
 
-.storieSlice__ul {
-  position: absolute;
-  height: 25vw;
-  width: 100%;
-  transition: 1s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1vw;
+.splide__arrows {
+  display: none;
 }
 
 .storieSlice__title {
@@ -92,29 +85,35 @@
   display: flex;
   gap: 1vw;
   color: var(--text-color-gold);
+  justify-content: center;
+  align-items: center;
 }
+
 .storieSlice__title p {
   margin-top: -0.2vw;
 }
+
 .storieSlice__description {
   font-size: 1.1vw;
   font-family: 'Manrope', sans-seri;
   font-weight: 100;
 }
-.storieSlice__counter {
-  position: absolute;
-  bottom: 8vw;
-  display: flex;
-  gap: 0.3vw;
-  z-index: 5;
-}
 
-.storieSlice__counter span {
+
+.splide__pagination__page.is-active {
   width: 0.5vw;
   height: 0.5vw;
-  background-color: rgba(255, 255, 255, 0.61);
+  background-color: rgb(255, 255, 255) !important;
   border-radius: 50%;
 }
+
+.splide__pagination__page {
+  width: 0.5vw !important;
+  height: 0.5vw !important;
+  background-color: rgba(255, 255, 255, 0.61);
+  border-radius: 50% !important;
+}
+
 
 /* nav Stories */
 
@@ -140,9 +139,11 @@
   cursor: pointer;
   transition: 0.5s;
 }
+
 .navStories__active {
   color: rgb(204, 172, 92) !important;
 }
+
 /* let's Meet Stories container */
 .letsMeetStories__container {
   position: relative;
@@ -157,6 +158,7 @@
   opacity: 0;
   transform: translateY(50%);
 }
+
 .letsMeetStories__container img {
   position: absolute;
   top: 0;
@@ -217,50 +219,76 @@
   justify-content: center;
   align-items: center;
 }
+
 .LogoStories__contianer img {
   width: 90%;
 }
+
 @media (max-width: 600px) {
   .stories__start {
     height: 100vh;
   }
+
   .storieSlice__container {
-    width: 75%;
-    height: 60vw;
-    bottom: 15vw;
+    position: absolute !important;
+    width: 85%;
+    bottom: 10vh !important;
   }
+
+  .splide {
+    padding: 2em 0 !important;
+  }
+
   .storiesStart__h2 {
     padding-top: 40vw;
     height: auto;
     line-height: 8.5vw;
   }
+
   .storieSlice__title {
     font-size: 4.5vw;
   }
+
   .storieSlice__description {
     text-align: start;
     font-size: 3.2vw;
   }
+
   .storieSlice__counter {
     bottom: 5vw;
   }
-  .storieSlice__counter span {
+
+  .splide__pagination__page.is-active {
     width: 2vw;
     height: 2vw;
+    background-color: rgb(255, 255, 255) !important;
+    border-radius: 50%;
   }
+
+  .splide__pagination__page {
+    width: 2vw !important;
+    height: 2vw !important;
+    background-color: rgba(255, 255, 255, 0.61);
+    border-radius: 50% !important;
+  }
+
   .navStories__contianer {
     height: 14vw;
   }
+
   .navStories__contianer ul {
     padding: 1vw;
   }
+
   .navStories__contianer li {
     font-size: 3.2vw;
   }
+
   .cardVideosStories__container {
     width: 100% !important;
     height: 65vw !important;
   }
+
   .cardVideosStories__dataContainer p {
     font-size: 3vw !important;
   }
@@ -269,12 +297,15 @@
     width: 100% !important;
     height: 65vw !important;
   }
+
   .letsMeetStories__container {
     height: 70vw;
   }
+
   .letsMeetStories__container h4 {
     font-size: 3.5vw;
   }
+
   .letsMeetStories__container p {
     font-size: 4vw;
     line-height: 4vw;

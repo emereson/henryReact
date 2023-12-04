@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 
 const CardVideosStories = ({ videoStorie, index }) => {
   const [playVideo, setPlayVideo] = useState(false);
-  const [sliderDataVideo, setsliderDataVideo] = useState(0);
   const [videoVisible, setvideoVisible] = useState(false);
   const navigate = useNavigate();
   const translation = useSelector((state) => state.translation);
@@ -25,19 +24,6 @@ const CardVideosStories = ({ videoStorie, index }) => {
   const toggleVideoPause = () => {
     setPlayVideo(false);
   };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setsliderDataVideo(
-        (prevSlider) =>
-          (prevSlider + 1) % videoStorie.dataVideos.length
-      );
-    }, 4000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [videoStorie.dataVideos.length]);
 
   useEffect(() => {
     const handleScroll = () => {

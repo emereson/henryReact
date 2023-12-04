@@ -14,6 +14,7 @@ import Films from './pages/Films';
 import Photo from './pages/Photo';
 import LetsConnect from './pages/LetsConnect';
 import PhotograpyInfomation from './pages/PhotograpyInfomation';
+import BlogInformation from './pages/BlogInformation';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -95,6 +96,10 @@ function App() {
           <Route
             path="/photograpyInfomation/:id"
             element={<PhotograpyInfomation />}
+          />
+          <Route
+            path="/blogInformation/:id"
+            element={<BlogInformation translation={translation} />}
           />
         </Routes>
       )}

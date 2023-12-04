@@ -9,6 +9,16 @@ import { useSelector } from 'react-redux';
 import ClickTop from '../components/ClickTop';
 import { Link } from 'react-router-dom';
 import BlogStories from '../components/stories/BlogStories';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+// Default theme
+import '@splidejs/react-splide/css';
+
+// or other themes
+import '@splidejs/react-splide/css/skyblue';
+import '@splidejs/react-splide/css/sea-green';
+
+// or only core styles
+import '@splidejs/react-splide/css/core';
 
 const Stories = () => {
   const [storiesSlices, setStoriesSlices] = useState();
@@ -114,6 +124,8 @@ const Stories = () => {
     return () => clearInterval(interval);
   }, [storiesSlices]);
 
+  // var splide = new Splide('.splide');
+  // // splide.mount();
   return (
     <div className="stories__container">
       <section className="stories__start">
@@ -141,11 +153,7 @@ const Stories = () => {
             </>
           )}
         </h2>
-        <div
-          className={`storieSlice__container ${
-            viewSection ? 'viewAnimation' : ''
-          }`}
-        >
+        <Splide className={` splide storieSlice__container `}>
           {storiesSlices?.storiesSlice.map((storieSlice, index) => (
             <StoriesSlice
               key={storieSlice.id}
@@ -155,21 +163,7 @@ const Stories = () => {
               translation={translation}
             />
           ))}
-          <div className="storieSlice__counter" id="Slice__counter">
-            {storiesSlices?.storiesSlice.map(
-              (couterSlider, index) => (
-                <span
-                  style={
-                    storiesTextSlices === index
-                      ? { background: 'var(--body-white)' }
-                      : { background: '' }
-                  }
-                  key={couterSlider.id}
-                ></span>
-              )
-            )}
-          </div>
-        </div>
+        </Splide>
       </section>
       <NavStories
         setSelectNav={setSelectNav}

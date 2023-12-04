@@ -8,6 +8,11 @@
   z-index: 6;
   overflow: hidden;
 }
+
+.blogStories__firstImg {
+  animation: slideIn 0.5s forwards;
+}
+
 .film-effect1 {
   position: absolute;
   top: 0;
@@ -28,6 +33,7 @@
   background: linear-gradient(0deg, rgb(2, 1, 0), rgb(31, 22, 22));
   padding-bottom: 5vw;
 }
+
 .blogStories__sectionOne {
   width: 100%;
   display: flex;
@@ -100,28 +106,35 @@
     padding-top: 10vw;
     gap: 6vw;
   }
+
   .blogStories__sectionOne h2 {
     width: 90%;
     font-size: 4.5vw;
   }
+
   .blogStories__sectionOne p {
     width: 80%;
     font-size: 3.5vw;
   }
+
   .blogStories__sectionTwo {
     padding-top: 10vw;
     gap: 6vw;
   }
+
   .blogStories__sectionTwo h3 {
     font-size: 4.5vw;
   }
+
   .blogStories__sectionTwo img {
     width: 30%;
   }
+
   .blogStories__sectionTwo p {
     width: 80%;
     font-size: 3.5vw;
   }
+
   .blogStories__sectionTwo span {
     font-size: 3.5vw;
   }
