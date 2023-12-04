@@ -168,7 +168,7 @@ const Header = () => {
                 ES
               </button>
             </div>
-            <a href="mailto:hello@henrygilweddings.com?subject=Hola Buenos dias Vi su Pagina Web">
+            <a href="mailto:hello@henrygilweddings.com?subject=Hola Henry">
               hello@henrygilweddings.com
             </a>
           </div>
