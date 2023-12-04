@@ -7,15 +7,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    180deg,
-    rgb(31, 22, 13),
-    rgb(34, 31, 30),
-    rgb(19, 17, 14)
-  );
+  background: linear-gradient(180deg,
+      rgb(31, 22, 13),
+      rgb(34, 31, 30),
+      rgb(19, 17, 14));
   transition: 1s;
   gap: 0.5vw;
 }
+
 .loadingPage__exit {
   opacity: 0;
   z-index: -10;
@@ -41,6 +40,7 @@
   from {
     transform: scale(1);
   }
+
   to {
     transform: scale(1.1);
   }
@@ -52,11 +52,13 @@
     width: 85vw;
     font-size: 13vw;
   }
+
   .loadingPage__div {
     width: 78vw;
     height: 1vw;
   }
 }
+
 .loadingPage__container img {
-  width: 90%;
+  width: 100%;
 }
