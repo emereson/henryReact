@@ -1,23 +1,26 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
+import ReactPlayer from 'react-player';
 
 const Videos = ({ video }) => {
-  const videoRef = useRef(null);
+  const [playing, setPlaying] = useState(true);
 
   const handleVideoEnded = () => {
-    videoRef.current.play();
+    setPlaying(false); // Pausa el video
+    setTimeout(() => {
+      setPlaying(true); // Reinicia el video después de un pequeño retraso
+    }, 100);
   };
+
   return (
     <div className="video__container">
-      <video
-        autoPlay
-        muted
-        loop
+      <ReactPlayer
+        url={video.homeVideoUrl}
+        width="100%"
+        height="100%"
+        playing={playing}
+        loop={true}
         onEnded={handleVideoEnded}
-        ref={videoRef}
-        className="video__video"
-      >
-        <source src={video.homeVideoUrl} type="video/mp4" />
-      </video>
+      />
     </div>
   );
 };
