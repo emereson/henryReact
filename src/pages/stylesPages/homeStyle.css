@@ -27,6 +27,7 @@
   height: 0.16vw;
   background-color: var(--body-white);
 }
+
 .title__main,
 .title__sub {
   font-size: 10vw;
@@ -38,6 +39,7 @@
   transform: translateY(20px);
   gap: 1vw;
 }
+
 .title__main.enter {
   animation: slideIn 1s forwards;
 }
@@ -50,22 +52,35 @@
 
 .home__videos {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   top: 0;
   left: 0;
   filter: brightness(0.5);
 }
+
 .video__container {
-  width: 100%;
-  height: 100%;
   position: relative;
+  width: 100vw !important;
+  height: 100vh !important;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
   overflow: hidden;
 }
 
-.video__video {
-  width: 100%;
-  height: 100%;
+.video__reactplayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.video__reactplayer video {
+  width: 100% !important;
+  height: 100% !important;
   object-fit: cover;
 }
 
@@ -81,6 +96,7 @@
   font-size: 1.2vw;
   font-weight: 300;
 }
+
 .home__ul a {
   color: var(--body-white);
 }
@@ -113,6 +129,7 @@
   color: var(--text-color-white);
   background-color: #5c5443;
 }
+
 @media (max-width: 660px) {
   .home__nav {
     position: absolute;
@@ -123,6 +140,7 @@
     justify-content: center;
     align-items: center;
   }
+
   .home__ul {
     position: relative !important;
     bottom: auto;
@@ -137,6 +155,7 @@
     left: 35%;
     right: auto;
   }
+
   .translation__container button {
     width: 15vw;
     font-size: 4vw;

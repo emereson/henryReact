@@ -15,15 +15,7 @@ import Photo from './pages/Photo';
 import LetsConnect from './pages/LetsConnect';
 import PhotograpyInfomation from './pages/PhotograpyInfomation';
 import BlogInformation from './pages/BlogInformation';
-
-const ScrollToTop = () => {
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-};
+import ScrollToTop from './hooks/ScrollToTop';
 
 function App() {
   const [viewloading, setViewLoading] = useState(false);
