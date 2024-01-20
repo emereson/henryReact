@@ -25,6 +25,7 @@ const Home = () => {
       .then((res) => setvideos(res.data))
       .catch((err) => console.log(err));
   }, []);
+  console.log(videos);
 
   return (
     <div className="home__container">

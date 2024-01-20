@@ -10,6 +10,13 @@ const CardVideosStories = ({ videoStorie, index }) => {
   const translation = useSelector((state) => state.translation);
   const playerRef = useRef(null);
 
+  useEffect(() => {
+    setPlayVideo(true);
+    setTimeout(() => {
+      setPlayVideo(false);
+    }, 100);
+  }, []);
+
   const handlePlayVideo = () => {
     if (playerRef.current) {
       playerRef.current.seekTo(40, 'seconds'); // Busca el segundo 40
